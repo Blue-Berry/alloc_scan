@@ -76,15 +76,26 @@ let parse_file file =
     ^ "\n")
 ;;
 
-
 open Vcaml
+
+let highlight () =
+  let buffer = Nvim_internal.Buffer.Or_current.Current in
+  let ns_id : int = -1 in
+  let hl_group : string = "Search" in
+  let line : int = 1 in
+  let col_start : int = 1 in
+  let col_end : int = 2 in
+  let result = Nvim_internal.nvim_buf_add_highlight ~buffer ~ns_id ~hl_group ~line ~col_start ~col_end in
+  result
+;;
+
 
 let find_allocs =
   Vcaml_plugin.Oneshot.Rpc.create
     [%here]
     ~name:"alloc-scan"
     ~type_:Ocaml_from_nvim.Blocking.(String @-> return Nil)
-    ~f:(fun ~client filepath -> Nvim.out_writeln [%here] client (parse_file filepath))
+    ~f:(fun ~client filepath -> highlight () |> ignore; Nvim.out_writeln [%here] client (parse_file filepath))
 ;;
 
 (** This is an example of a "oneshot" plugin - the process is spawned to handle a single
