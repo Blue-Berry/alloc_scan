@@ -1,0 +1,1814 @@
+
+cmm:
+(data)
+(data
+ int 3063
+ global "camlLqtree__validate_1654"
+ "camlLqtree__validate_1654":
+ global "camlLqtree.validate_817_closure"
+ "camlLqtree.validate_817_closure":
+ addr "camlLqtree.validate_817"
+ int 72057594037927941)
+(data
+ int 3063
+ global "camlLqtree__to_index_1645"
+ "camlLqtree__to_index_1645":
+ global "camlLqtree.to_index_364_closure"
+ "camlLqtree.to_index_364_closure":
+ addr "camlLqtree.to_index_364"
+ int 72057594037927941)
+(data
+ int 4087
+ global "camlLqtree__to_bbox_1644"
+ "camlLqtree__to_bbox_1644":
+ global "camlLqtree.to_bbox_329_closure"
+ "camlLqtree.to_bbox_329_closure":
+ addr "caml_curry2"
+ int 144115188075855879
+ addr "camlLqtree.to_bbox_329")
+(data
+ int 4087
+ global "camlLqtree__subdivide_leaf_2779"
+ "camlLqtree__subdivide_leaf_2779":
+ global "camlLqtree.subdivide_leaf_1090_closure"
+ "camlLqtree.subdivide_leaf_1090_closure":
+ addr "caml_curry2"
+ int 144115188075855879
+ addr "camlLqtree.subdivide_leaf_1090")
+(data
+ int 4087
+ global "camlLqtree__subdivide_2776"
+ "camlLqtree__subdivide_2776":
+ global "camlLqtree.subdivide_987_closure"
+ "camlLqtree.subdivide_987_closure":
+ addr "caml_curry2"
+ int 144115188075855879
+ addr "camlLqtree.subdivide_987")
+(data
+ int 3063
+ global "camlLqtree__size_1638"
+ "camlLqtree__size_1638":
+ global "camlLqtree.size_214_closure"
+ "camlLqtree.size_214_closure":
+ addr "camlLqtree.size_214"
+ int 72057594037927941)
+(data
+ int 4087
+ global "camlLqtree__set_1651"
+ "camlLqtree__set_1651":
+ global "camlLqtree.set_624_closure"
+ "camlLqtree.set_624_closure":
+ addr "caml_curry4"
+ int 288230376151711751
+ addr "camlLqtree.set_624")
+(data
+ int 4087
+ global "camlLqtree__set_1640"
+ "camlLqtree__set_1640":
+ global "camlLqtree.set_251_closure"
+ "camlLqtree.set_251_closure":
+ addr "caml_curry3"
+ int 216172782113783815
+ addr "camlLqtree.set_251")
+(data
+ int 4087
+ global "camlLqtree__populate_2786"
+ "camlLqtree__populate_2786":
+ global "camlLqtree.populate_1522_closure"
+ "camlLqtree.populate_1522_closure":
+ addr "caml_curry2"
+ int 144115188075855879
+ addr "camlLqtree.populate_1522")
+(data
+ int 3063
+ global "camlLqtree__of_index_1646"
+ "camlLqtree__of_index_1646":
+ global "camlLqtree.of_index_375_closure"
+ "camlLqtree.of_index_375_closure":
+ addr "camlLqtree.of_index_375"
+ int 72057594037927941)
+(data
+ int 3063
+ global "camlLqtree__nodes_len_1658"
+ "camlLqtree__nodes_len_1658":
+ global "camlLqtree.nodes_len_899_closure"
+ "camlLqtree.nodes_len_899_closure":
+ addr "camlLqtree.nodes_len_899"
+ int 72057594037927941)
+(data
+ int 3063
+ global "camlLqtree__node_type_1649"
+ "camlLqtree__node_type_1649":
+ global "camlLqtree.node_type_411_closure"
+ "camlLqtree.node_type_411_closure":
+ addr "camlLqtree.node_type_411"
+ int 72057594037927941)
+(data
+ int 4087
+ global "camlLqtree__node_check_1662"
+ "camlLqtree__node_check_1662":
+ global "camlLqtree.node_check_1204_closure"
+ "camlLqtree.node_check_1204_closure":
+ addr "caml_curry3"
+ int 216172782113783815
+ addr "camlLqtree.node_check_1204")
+(data
+ int 3063
+ global "camlLqtree__new_ts_1653"
+ "camlLqtree__new_ts_1653":
+ global "camlLqtree.new_ts_781_closure"
+ "camlLqtree.new_ts_781_closure":
+ addr "camlLqtree.new_ts_781"
+ int 72057594037927941)
+(data
+ int 3063
+ global "camlLqtree__new_t_2773"
+ "camlLqtree__new_t_2773":
+ global "camlLqtree.new_t_959_closure"
+ "camlLqtree.new_t_959_closure":
+ addr "camlLqtree.new_t_959"
+ int 72057594037927941)
+(data
+ int 4087
+ global "camlLqtree__new_node_1648"
+ "camlLqtree__new_node_1648":
+ global "camlLqtree.new_node_399_closure"
+ "camlLqtree.new_node_399_closure":
+ addr "caml_curry2"
+ int 144115188075855879
+ addr "camlLqtree.new_node_399")
+(data
+ int 3063
+ global "camlLqtree__midy_1637"
+ "camlLqtree__midy_1637":
+ global "camlLqtree.midy_185_closure"
+ "camlLqtree.midy_185_closure":
+ addr "camlLqtree.midy_185"
+ int 72057594037927941)
+(data
+ int 3063
+ global "camlLqtree__midx_1636"
+ "camlLqtree__midx_1636":
+ global "camlLqtree.midx_156_closure"
+ "camlLqtree.midx_156_closure":
+ addr "camlLqtree.midx_156"
+ int 72057594037927941)
+(data
+ int 4087
+ global "camlLqtree__insert_2783"
+ "camlLqtree__insert_2783":
+ global "camlLqtree.insert_1364_closure"
+ "camlLqtree.insert_1364_closure":
+ addr "caml_curry2"
+ int 144115188075855879
+ addr "camlLqtree.insert_1364")
+(data
+ int 4087
+ global "camlLqtree__get_1650"
+ "camlLqtree__get_1650":
+ global "camlLqtree.get_533_closure"
+ "camlLqtree.get_533_closure":
+ addr "caml_curry3"
+ int 216172782113783815
+ addr "camlLqtree.get_533")
+(data
+ int 4087
+ global "camlLqtree__get_1639"
+ "camlLqtree__get_1639":
+ global "camlLqtree.get_228_closure"
+ "camlLqtree.get_228_closure":
+ addr "caml_curry2"
+ int 144115188075855879
+ addr "camlLqtree.get_228")
+(data
+ int 4087
+ global "camlLqtree__equal_2766"
+ "camlLqtree__equal_2766":
+ global "camlLqtree.equal_435_closure"
+ "camlLqtree.equal_435_closure":
+ addr "caml_curry2"
+ int 144115188075855879
+ addr "camlLqtree.equal_435")
+(data
+ int 4087
+ global "camlLqtree__contains_point_1635"
+ "camlLqtree__contains_point_1635":
+ global "camlLqtree.contains_point_127_closure"
+ "camlLqtree.contains_point_127_closure":
+ addr "caml_curry2"
+ int 144115188075855879
+ addr "camlLqtree.contains_point_127")
+(data
+ int 4087
+ global "camlLqtree__contains_1643"
+ "camlLqtree__contains_1643":
+ global "camlLqtree.contains_300_closure"
+ "camlLqtree.contains_300_closure":
+ addr "caml_curry2"
+ int 144115188075855879
+ addr "camlLqtree.contains_300")
+(data
+ int 3063
+ global "camlLqtree__clear_2787"
+ "camlLqtree__clear_2787":
+ global "camlLqtree.clear_1549_closure"
+ "camlLqtree.clear_1549_closure":
+ addr "camlLqtree.clear_1549"
+ int 72057594037927941)
+(data
+ int 3063
+ global "camlLqtree__clear_1659"
+ "camlLqtree__clear_1659":
+ global "camlLqtree.clear_913_closure"
+ "camlLqtree.clear_913_closure":
+ addr "camlLqtree.clear_913"
+ int 72057594037927941)
+(data
+ int 4087
+ global "camlLqtree__centroid_sum_1634"
+ "camlLqtree__centroid_sum_1634":
+ global "camlLqtree.centroid_sum_77_closure"
+ "camlLqtree.centroid_sum_77_closure":
+ addr "caml_curry2"
+ int 144115188075855879
+ addr "camlLqtree.centroid_sum_77")
+(data
+ int 4087
+ global "camlLqtree__build_qtree_in_2785"
+ "camlLqtree__build_qtree_in_2785":
+ global "camlLqtree.build_qtree_in_1491_closure"
+ "camlLqtree.build_qtree_in_1491_closure":
+ addr "caml_curry2"
+ int 144115188075855879
+ addr "camlLqtree.build_qtree_in_1491")
+(data
+ int 4087
+ global "camlLqtree__add_1652"
+ "camlLqtree__add_1652":
+ global "camlLqtree.add_722_closure"
+ "camlLqtree.add_722_closure":
+ addr "caml_curry2"
+ int 144115188075855879
+ addr "camlLqtree.add_722")
+(data
+ int 4087
+ global "camlLqtree__add_1641"
+ "camlLqtree__add_1641":
+ global "camlLqtree.add_275_closure"
+ "camlLqtree.add_275_closure":
+ addr "caml_curry2"
+ int 144115188075855879
+ addr "camlLqtree.add_275")
+(data
+ int 4087
+ global "camlLqtree__acc_by_qtree_2782"
+ "camlLqtree__acc_by_qtree_2782":
+ global "camlLqtree.acc_by_qtree_1244_closure"
+ "camlLqtree.acc_by_qtree_1244_closure":
+ addr "caml_curry2"
+ int 144115188075855879
+ addr "camlLqtree.acc_by_qtree_1244")
+(data
+ int 4087
+ "camlLqtree.2":
+ "camlLqtree.iter_6009_closure":
+ addr "caml_curry2"
+ int 144115188075855879
+ addr "camlLqtree.iter_6009")
+(data
+ int 4087
+ "camlLqtree.1":
+ "camlLqtree.iter_6791_closure":
+ addr "caml_curry2"
+ int 144115188075855879
+ addr "camlLqtree.iter_6791")
+(data int 1792 global "camlLqtree__cond_2794" "camlLqtree__cond_2794": int 1)
+(data
+ int 1792
+ global "camlLqtree__simplify_fv_2795"
+ "camlLqtree__simplify_fv_2795":
+ int 1)
+(data int 1792 global "camlLqtree__cond_4109" "camlLqtree__cond_4109": int 1)
+(data
+ int 1792
+ global "camlLqtree__simplify_fv_4110"
+ "camlLqtree__simplify_fv_4110":
+ int 1)
+(data
+ int 11008
+ global "camlLqtree__Pmakeblock_1728"
+ "camlLqtree__Pmakeblock_1728":
+ addr "camlLqtree__prim_7477"
+ addr "camlLqtree.new_t_959_closure"
+ addr "camlLqtree.subdivide_987_closure"
+ addr "camlLqtree.subdivide_leaf_1090_closure"
+ addr "camlLqtree.node_check_1204_closure"
+ addr "camlLqtree.acc_by_qtree_1244_closure"
+ addr "camlLqtree.insert_1364_closure"
+ addr "camlLqtree.build_qtree_in_1491_closure"
+ addr "camlLqtree.populate_1522_closure"
+ addr "camlLqtree.clear_1549_closure")
+(data
+ global "camlLqtree.gc_roots"
+ "camlLqtree.gc_roots":
+ addr "camlLqtree__Pmakeblock_1728"
+ addr "camlLqtree__simplify_fv_4110"
+ addr "camlLqtree__cond_4109"
+ addr "camlLqtree__simplify_fv_2795"
+ addr "camlLqtree__cond_2794"
+ int 0)
+(function{list.ml:110,13-64} camlLqtree.iter_6009
+     (param/2559: val f/2558: val env/2557: val)
+ (if (and param/2559 1) 1
+   (let
+     (apply_arg/2561 (load val param/2559)
+      Pmakeblock_arg/2562 (load_mut val (+a apply_arg/2561 8))
+      Pmakeblock/2564
+        (alloc{list.ml:112,12-15;lqtree/lqtree.ml:365,30-43} 2048
+          (load val apply_arg/2561) Pmakeblock_arg/2562)
+      sequence/2566
+        (app{list.ml:112,12-15;lqtree/lqtree.ml:366,9-22}
+          "camlLqtree.insert_1364" f/2558 Pmakeblock/2564 val))
+     (app{list.ml:112,17-25;list.ml:110,13-64} "camlLqtree.iter_6009"
+       (load val (+a param/2559 8)) f/2558 env/2557 val))))
+
+(function{list.ml:110,13-64} camlLqtree.iter_6791
+     (param/2589: val f/2588: val env/2587: val)
+ (if (and param/2589 1) 1
+   (let
+     (apply_arg/2591 (load val param/2589)
+      Pmakeblock_arg/2592 (load_mut val (+a apply_arg/2591 8))
+      Pmakeblock/2594
+        (alloc{list.ml:112,12-15;lqtree/lqtree.ml:356,30-43} 2048
+          (load val apply_arg/2591) Pmakeblock_arg/2592)
+      sequence/2596
+        (app{list.ml:112,12-15;lqtree/lqtree.ml:357,9-21}
+          "camlLqtree.insert_1364" f/2588 Pmakeblock/2594 val))
+     (app{list.ml:112,17-25;list.ml:110,13-64} "camlLqtree.iter_6791"
+       (load val (+a param/2589 8)) f/2588 env/2587 val))))
+
+(function{lqtree/lqtree.ml:11,17-198} camlLqtree.centroid_sum_77
+     (c1/2018: val c2/2017: val)
+ (let
+   (m2/2019 (load val c2/2017) m1/2020 (load val c1/2018)
+    Paddfloat/2956 (+f (load float64 m1/2020) (load float64 m2/2019))
+    apply_arg/2022 (load val (+a c2/2017 8))
+    apply_arg/2023 (load val (+a apply_arg/2022 8))
+    apply_arg/2025 (load val apply_arg/2022)
+    apply_arg/2027 (load val (+a c1/2018 8))
+    apply_arg/2028 (load val (+a apply_arg/2027 8))
+    apply_arg/2030 (load val apply_arg/2027)
+    Pdivfloat/2957 (/f 1. Paddfloat/2956)
+    Pmakeblock/2038
+      (alloc{lqtree/lqtree.ml:16,8-49;nbody/nbody.ml:21,48-64} 2048
+        (alloc{lqtree/lqtree.ml:16,8-49;nbody/nbody.ml:21,48-55;src/owl/maths/owl_maths.ml:14,10-16}
+          1277
+          (*f Pdivfloat/2957
+            (+f (*f (load float64 m1/2020) (load float64 apply_arg/2030))
+              (*f (load float64 m2/2019) (load float64 apply_arg/2025)))))
+        (alloc{lqtree/lqtree.ml:16,8-49;nbody/nbody.ml:21,57-64;src/owl/maths/owl_maths.ml:14,10-16}
+          1277
+          (*f Pdivfloat/2957
+            (+f (*f (load float64 m1/2020) (load float64 apply_arg/2028))
+              (*f (load float64 m2/2019) (load float64 apply_arg/2023)))))))
+   (alloc{lqtree/lqtree.ml:16,2-49} 2048
+     (alloc{lqtree/lqtree.ml:15,13-21;src/owl/maths/owl_maths.ml:10,10-16}
+       1277 Paddfloat/2956)
+     Pmakeblock/2038)))
+
+(function{lqtree/lqtree.ml:31,21-120} camlLqtree.contains_point_127
+     (param/2041: val bb/2040: val)
+ (let (y/2042 (load val (+a param/2041 8)) x/2043 (load val param/2041))
+   (if (<=f (load_mut float64 bb/2040) (load float64 x/2043))
+     (let Pfloatcomp_arg/2958 (load_mut float64 (+a bb/2040 16))
+       (if (<=f (load float64 x/2043) Pfloatcomp_arg/2958)
+         (if (<=f (load_mut float64 (+a bb/2040 8)) (load float64 y/2042))
+           (let Pfloatcomp_arg/2959 (load_mut float64 (+a bb/2040 24))
+             (+ (<< (<=f (load float64 y/2042) Pfloatcomp_arg/2959) 1) 1))
+           1)
+         1))
+     1)))
+
+(function{lqtree/lqtree.ml:35,11-69} camlLqtree.midx_156 (bb/2055: val)
+ (let
+   (apply_arg/2960 (load_mut float64 bb/2055)
+    Pdivfloat/2961
+      (/f (-f (load_mut float64 (+a bb/2055 16)) apply_arg/2960) 2.))
+   (alloc{lqtree/lqtree.ml:35,30-69;src/owl/maths/owl_maths.ml:10,10-16} 1277
+     (+f (load_mut float64 bb/2055) Pdivfloat/2961))))
+
+(function{lqtree/lqtree.ml:36,11-69} camlLqtree.midy_185 (bb/2063: val)
+ (let
+   (apply_arg/2962 (load_mut float64 (+a bb/2063 8))
+    Pdivfloat/2963
+      (/f (-f (load_mut float64 (+a bb/2063 24)) apply_arg/2962) 2.))
+   (alloc{lqtree/lqtree.ml:36,30-69;src/owl/maths/owl_maths.ml:10,10-16} 1277
+     (+f (load_mut float64 (+a bb/2063 8)) Pdivfloat/2963))))
+
+(function{lqtree/lqtree.ml:37,11-48} camlLqtree.size_214 (bb/2071: val)
+ (let apply_arg/2964 (load_mut float64 bb/2071)
+   (alloc{lqtree/lqtree.ml:37,30-48;src/owl/maths/owl_maths.ml:12,10-16} 1277
+     (-f (load_mut float64 (+a bb/2071 16)) apply_arg/2964))))
+
+(function{lqtree/lqtree.ml:39,10-142} camlLqtree.get_228
+     (bbs/2076: val i/2075: val)
+ (let
+   (bb/2078
+      (app{lqtree/lqtree.ml:40,13-39} "camlVec_array.get_562" bbs/2076 i/2075
+        val)
+    Pmakearray_arg/2965 (load_mut float64 (+a bb/2078 24))
+    Pmakearray_arg/2966 (load_mut float64 (+a bb/2078 16))
+    Pmakearray_arg/2967 (load_mut float64 (+a bb/2078 8)))
+   (alloc{lqtree/lqtree.ml:41,4-62} 4350 (load_mut float64 bb/2078)
+     Pmakearray_arg/2967 Pmakearray_arg/2966 Pmakearray_arg/2965)))
+
+(function{lqtree/lqtree.ml:44,10-171} camlLqtree.set_251
+     (bbs/2086: val i/2085: val bb/2084: val)
+ (let
+   (Pmakearray_arg/2968 (load_mut float64 (+a bb/2084 24))
+    Pmakearray_arg/2969 (load_mut float64 (+a bb/2084 16))
+    Pmakearray_arg/2970 (load_mut float64 (+a bb/2084 8))
+    Pmakearray/2091
+      (alloc{lqtree/lqtree.ml:46,31-89} 4350 (load_mut float64 bb/2084)
+        Pmakearray_arg/2970 Pmakearray_arg/2969 Pmakearray_arg/2968))
+   (app{lqtree/lqtree.ml:46,4-89} "camlVec_array.set_702" bbs/2086 i/2085
+     Pmakearray/2091 val)))
+
+(function{lqtree/lqtree.ml:49,10-176} camlLqtree.add_275
+     (bbs/2094: val bb/2093: val)
+ (let
+   (Pmakearray_arg/2971 (load_mut float64 (+a bb/2093 24))
+    Pmakearray_arg/2972 (load_mut float64 (+a bb/2093 16))
+    Pmakearray_arg/2973 (load_mut float64 (+a bb/2093 8))
+    Pmakearray/2099
+      (alloc{lqtree/lqtree.ml:53,6-64} 4350 (load_mut float64 bb/2093)
+        Pmakearray_arg/2973 Pmakearray_arg/2972 Pmakearray_arg/2971))
+   (app{lqtree/lqtree.ml:51,4-104} "camlVec_array.add_last_636" bbs/2094
+     Pmakearray/2099 val)))
+
+(function{lqtree/lqtree.ml:66,15-199} camlLqtree.contains_300
+     (param/2102: val bb/2101: val)
+ (let
+   (apply_arg/2974 (load_mut float64 bb/2101)
+    Pdivfloat/2975
+      (/f (-f (load_mut float64 (+a bb/2101 16)) apply_arg/2974) 2.)
+    Paddfloat/2976 (+f (load_mut float64 bb/2101) Pdivfloat/2975)
+    Pfloatcomp/2111
+      (+ (<< (<=f (load float64 (load val param/2102)) Paddfloat/2976) 1) 1)
+    apply_arg/2977 (load_mut float64 (+a bb/2101 8))
+    Pdivfloat/2978
+      (/f (-f (load_mut float64 (+a bb/2101 24)) apply_arg/2977) 2.)
+    Paddfloat/2979 (+f (load_mut float64 (+a bb/2101 8)) Pdivfloat/2978)
+    Pfloatcomp/2120
+      (+
+        (<< (<=f (load float64 (load val (+a param/2102 8))) Paddfloat/2979)
+          1)
+        1))
+   (if (!= Pfloatcomp/2111 1) (if (!= Pfloatcomp/2120 1) 5 1)
+     (if (!= Pfloatcomp/2120 1) 7 3))))
+
+(function{lqtree/lqtree.ml:74,14-307} camlLqtree.to_bbox_329
+     (quad/2126: val bb/2125: val)
+ (let
+   (apply_arg/2980 (load_mut float64 bb/2125)
+    Pdivfloat/2981
+      (/f (-f (load_mut float64 (+a bb/2125 16)) apply_arg/2980) 2.)
+    Paddfloat/2982 (+f (load_mut float64 bb/2125) Pdivfloat/2981)
+    apply_arg/2983 (load_mut float64 (+a bb/2125 8))
+    Pdivfloat/2984
+      (/f (-f (load_mut float64 (+a bb/2125 24)) apply_arg/2983) 2.)
+    Paddfloat/2985 (+f (load_mut float64 (+a bb/2125 8)) Pdivfloat/2984))
+   (switch (>>s quad/2126 1) 
+   case 0:
+     (let Pmakearray_arg/2986 (load_mut float64 (+a bb/2125 24))
+       (alloc{lqtree/lqtree.ml:78,12-44} 4350 (load_mut float64 bb/2125)
+         Paddfloat/2985 Paddfloat/2982 Pmakearray_arg/2986))
+   case 1:
+     (let
+       (Pmakearray_arg/2987 (load_mut float64 (+a bb/2125 24))
+        Pmakearray_arg/2988 (load_mut float64 (+a bb/2125 16)))
+       (alloc{lqtree/lqtree.ml:79,12-44} 4350 Paddfloat/2982 Paddfloat/2985
+         Pmakearray_arg/2988 Pmakearray_arg/2987))
+   case 2:
+     (let Pmakearray_arg/2989 (load_mut float64 (+a bb/2125 8))
+       (alloc{lqtree/lqtree.ml:80,12-44} 4350 (load_mut float64 bb/2125)
+         Pmakearray_arg/2989 Paddfloat/2982 Paddfloat/2985))
+   case 3:
+     (let
+       (Pmakearray_arg/2990 (load_mut float64 (+a bb/2125 16))
+        Pmakearray_arg/2991 (load_mut float64 (+a bb/2125 8)))
+       (alloc{lqtree/lqtree.ml:81,12-44} 4350 Paddfloat/2982
+         Pmakearray_arg/2991 Pmakearray_arg/2990 Paddfloat/2985)))))
+
+(function{lqtree/lqtree.ml:84,15-109} camlLqtree.to_index_364
+     (quad/2153: val)
+ (+ (<< (>>s quad/2153 1) 1) 1))
+
+(function{lqtree/lqtree.ml:92,15-147} camlLqtree.of_index_375 (idx/2158: val)
+ (if (<a 7 idx/2158)
+   (raise{lqtree/lqtree.ml:98,11-39;stdlib.ml:29,17-33}
+     "camlLqtree__Pmakeblock_4103")
+   (+ (<< (>>s idx/2158 1) 1) 1)))
+
+(function{lqtree/lqtree.ml:122,15-73} camlLqtree.new_node_399
+     (centroid/2168: val bbox/2167: val)
+ (alloc{lqtree/lqtree.ml:122,31-73} 4096 centroid/2168 1 1 bbox/2167))
+
+(function{lqtree/lqtree.ml:130,16-158} camlLqtree.node_type_411
+     (node/2172: val)
+ (if (== (load_mut val (+a node/2172 8)) 1)
+   (+ (<< (!=f (load float64 (load val (load_mut val node/2172))) 0.) 1) 1)
+   5))
+
+(function{lqtree/lqtree.ml:138,12-689} camlLqtree.equal_435
+     (a/2856: val b/2855: val)
+ (let
+   (b_child/2857 (load_mut val (+a b/2855 8))
+    a_child/2858 (load_mut val (+a a/2856 8))
+    b_next/2859 (load_mut val (+a b/2855 16))
+    a_next/2860 (load_mut val (+a a/2856 16))
+    b_bbox/2861 (load val (+a b/2855 24))
+    a_bbox/2862 (load val (+a a/2856 24)) param/2863 (load_mut val b/2855)
+    param/2864 (load_mut val a/2856)
+    apply_arg/2865 (load val (+a param/2863 8))
+    apply_arg/2866 (load val (+a param/2864 8))
+    apply_arg/2868 (load val (+a apply_arg/2866 8))
+    Psubfloat/3021
+      (-f (load float64 (load val (+a apply_arg/2865 8)))
+        (load float64 apply_arg/2868))
+    apply_arg/2871 (load val apply_arg/2866)
+    Psubfloat/3022
+      (-f (load float64 (load val apply_arg/2865))
+        (load float64 apply_arg/2871)))
+   (catch
+     (if
+       (<f
+         (+f (*f Psubfloat/3022 Psubfloat/3022)
+           (*f Psubfloat/3021 Psubfloat/3021))
+         1e-05)
+       (let apply_arg/2910 (load val param/2863)
+         (if
+           (<f
+             (-f (load float64 (load val param/2864))
+               (load float64 apply_arg/2910))
+             1e-05)
+           (let apply_arg/3023 (load_mut float64 (+a b_bbox/2861 8))
+             (if
+               (<f (-f (load_mut float64 (+a a_bbox/2862 8)) apply_arg/3023)
+                 1e-05)
+               (let apply_arg/3024 (load_mut float64 (+a b_bbox/2861 24))
+                 (if
+                   (<f
+                     (-f (load_mut float64 (+a a_bbox/2862 24))
+                       apply_arg/3024)
+                     1e-05)
+                   (let apply_arg/3025 (load_mut float64 b_bbox/2861)
+                     (if
+                       (<f (-f (load_mut float64 a_bbox/2862) apply_arg/3025)
+                         1e-05)
+                       (let
+                         apply_arg/3026
+                           (load_mut float64 (+a b_bbox/2861 16))
+                         (if
+                           (<f
+                             (-f (load_mut float64 (+a a_bbox/2862 16))
+                               apply_arg/3026)
+                             1e-05)
+                           (if (== a_child/2858 b_child/2857)
+                             (+ (<< (== a_next/2860 b_next/2859) 1) 1) 1)
+                           (exit 74)))
+                       (exit 74)))
+                   (exit 74)))
+               (exit 74)))
+           (exit 74)))
+       (exit 74))
+   with(74) 1)))
+
+(function{lqtree/lqtree.ml:166,10-604} camlLqtree.get_533
+     (node/2185: val idx/2184: val field/2183: val)
+ (switch (>>s field/2183 1) 
+ case 0:
+   (let
+     (*match*/2188
+        (app{lqtree/lqtree.ml:170,34-63} "camlVec_array.get_362"
+          (load_mut val node/2185) idx/2184 val)
+      Pmakeblock_arg/2992 (load_mut float64 (+a *match*/2188 16))
+      Pmakeblock/2191
+        (alloc{lqtree/lqtree.ml:171,10-18} 2048
+          (alloc{lqtree/lqtree.ml:170,17-31} 1277
+            (load_mut float64 (+a *match*/2188 8)))
+          (alloc{lqtree/lqtree.ml:170,17-31} 1277 Pmakeblock_arg/2992)))
+     (alloc{lqtree/lqtree.ml:171,6-18} 2048
+       (alloc{lqtree/lqtree.ml:170,17-31} 1277
+         (load_mut float64 *match*/2188))
+       Pmakeblock/2191))
+ case 1:
+   (+
+     (<<
+       (let ba/2993 (load_mut val (load_mut val (+a node/2185 8)))
+         (load_mut int
+           (+a
+             (+a (load_mut int (+a ba/2993 8))
+               (<<
+                 (seq
+                   (checkbound{lqtree/lqtree.ml:172,18-43;vec_array/vec_array.ml:207,36-54}
+                     (load_mut int (+a ba/2993 40)) (>>s idx/2184 1))
+                   idx/2184)
+                 2))
+             -4)))
+       1)
+     1)
+ case 2:
+   (+
+     (<<
+       (let ba/2994 (load_mut val (load_mut val (+a node/2185 16)))
+         (load_mut int
+           (+a
+             (+a (load_mut int (+a ba/2994 8))
+               (<<
+                 (seq
+                   (checkbound{lqtree/lqtree.ml:173,14-35;vec_array/vec_array.ml:207,36-54}
+                     (load_mut int (+a ba/2994 40)) (>>s idx/2184 1))
+                   idx/2184)
+                 2))
+             -4)))
+       1)
+     1)
+ case 3:
+   (let
+     (bb/2202
+        (app{lqtree/lqtree.ml:174,14-37;lqtree/lqtree.ml:40,13-39}
+          "camlVec_array.get_562" (load_mut val (+a node/2185 24)) idx/2184
+          val)
+      Pmakearray_arg/2995 (load_mut float64 (+a bb/2202 24))
+      Pmakearray_arg/2996 (load_mut float64 (+a bb/2202 16))
+      Pmakearray_arg/2997 (load_mut float64 (+a bb/2202 8)))
+     (alloc{lqtree/lqtree.ml:174,14-37;lqtree/lqtree.ml:41,4-62} 4350
+       (load_mut float64 bb/2202) Pmakearray_arg/2997 Pmakearray_arg/2996
+       Pmakearray_arg/2995))
+ case 4:
+   (let
+     (*match*/2210
+        (app{lqtree/lqtree.ml:176,34-63} "camlVec_array.get_362"
+          (load_mut val node/2185) idx/2184 val)
+      Pmakeblock_arg/2998 (load_mut float64 (+a *match*/2210 16))
+      Pmakeblock/2213
+        (alloc{lqtree/lqtree.ml:177,25-33} 2048
+          (alloc{lqtree/lqtree.ml:176,17-31} 1277
+            (load_mut float64 (+a *match*/2210 8)))
+          (alloc{lqtree/lqtree.ml:176,17-31} 1277 Pmakeblock_arg/2998))
+      Pmakeblock/2215
+        (alloc{lqtree/lqtree.ml:177,21-33} 2048
+          (alloc{lqtree/lqtree.ml:176,17-31} 1277
+            (load_mut float64 *match*/2210))
+          Pmakeblock/2213)
+      bb/2218
+        (app{lqtree/lqtree.ml:181,15-38;lqtree/lqtree.ml:40,13-39}
+          "camlVec_array.get_562" (load_mut val (+a node/2185 24)) idx/2184
+          val)
+      Pmakearray_arg/2999 (load_mut float64 (+a bb/2218 24))
+      Pmakearray_arg/3000 (load_mut float64 (+a bb/2218 16))
+      Pmakearray_arg/3001 (load_mut float64 (+a bb/2218 8))
+      Pmakearray/2223
+        (alloc{lqtree/lqtree.ml:181,15-38;lqtree/lqtree.ml:41,4-62} 4350
+          (load_mut float64 bb/2218) Pmakearray_arg/3001 Pmakearray_arg/3000
+          Pmakearray_arg/2999)
+      Pbigarrayref/2226
+        (+
+          (<<
+            (let ba/3002 (load_mut val (load_mut val (+a node/2185 16)))
+              (load_mut int
+                (+a
+                  (+a (load_mut int (+a ba/3002 8))
+                    (<<
+                      (seq
+                        (checkbound{lqtree/lqtree.ml:180,15-36;vec_array/vec_array.ml:207,36-54}
+                          (load_mut int (+a ba/3002 40)) (>>s idx/2184 1))
+                        idx/2184)
+                      2))
+                  -4)))
+            1)
+          1)
+      Pbigarrayref/2229
+        (+
+          (<<
+            (let ba/3003 (load_mut val (load_mut val (+a node/2185 8)))
+              (load_mut int
+                (+a
+                  (+a (load_mut int (+a ba/3003 8))
+                    (<<
+                      (seq
+                        (checkbound{lqtree/lqtree.ml:179,19-44;vec_array/vec_array.ml:207,36-54}
+                          (load_mut int (+a ba/3003 40)) (>>s idx/2184 1))
+                        idx/2184)
+                      2))
+                  -4)))
+            1)
+          1))
+     (alloc{lqtree/lqtree.ml:178,6-145} 4096 Pmakeblock/2215
+       Pbigarrayref/2229 Pbigarrayref/2226 Pmakearray/2223))))
+
+(function{lqtree/lqtree.ml:185,10-624} camlLqtree.set_624
+     (node/2234: val idx/2233: val field/2232: val value/2231: val)
+ (switch (>>s field/2232 1) 
+ case 0:
+   (let
+     (*match*/2235 (load val (+a value/2231 8))
+      Pmakearray_arg/2236 (load val (+a *match*/2235 8))
+      Pmakearray_arg/2237 (load val *match*/2235)
+      Pmakearray/2239
+        (alloc{lqtree/lqtree.ml:190,43-57} 3326
+          (load float64 (load val value/2231))
+          (load float64 Pmakearray_arg/2237)
+          (load float64 Pmakearray_arg/2236)))
+     (app{lqtree/lqtree.ml:190,6-57} "camlVec_array.set_486"
+       (load_mut val node/2234) idx/2233 Pmakearray/2239 val))
+ case 1:
+   (let ba/3004 (load_mut val (load_mut val (+a node/2234 8)))
+     (store int
+       (+a
+         (+a (load_mut int (+a ba/3004 8))
+           (<<
+             (seq
+               (checkbound{lqtree/lqtree.ml:191,18-49;vec_array/vec_array.ml:222,47-67}
+                 (load_mut int (+a ba/3004 40)) (>>s idx/2233 1))
+               idx/2233)
+             2))
+         -4)
+       (>>s value/2231 1)))
+   1
+ case 2:
+   (let ba/3005 (load_mut val (load_mut val (+a node/2234 16)))
+     (store int
+       (+a
+         (+a (load_mut int (+a ba/3005 8))
+           (<<
+             (seq
+               (checkbound{lqtree/lqtree.ml:192,14-41;vec_array/vec_array.ml:222,47-67}
+                 (load_mut int (+a ba/3005 40)) (>>s idx/2233 1))
+               idx/2233)
+             2))
+         -4)
+       (>>s value/2231 1)))
+   1
+ case 3:
+   (let
+     (apply_arg/2248 (load_mut val (+a node/2234 24))
+      Pmakearray_arg/3006 (load_mut float64 (+a value/2231 24))
+      Pmakearray_arg/3007 (load_mut float64 (+a value/2231 16))
+      Pmakearray_arg/3008 (load_mut float64 (+a value/2231 8))
+      Pmakearray/2253
+        (alloc{lqtree/lqtree.ml:193,14-43;lqtree/lqtree.ml:46,31-89} 4350
+          (load_mut float64 value/2231) Pmakearray_arg/3008
+          Pmakearray_arg/3007 Pmakearray_arg/3006))
+     (app{lqtree/lqtree.ml:193,14-43;lqtree/lqtree.ml:46,4-89}
+       "camlVec_array.set_702" apply_arg/2248 idx/2233 Pmakearray/2253 val))
+ case 4:
+   (let
+     (*match*/2255 (load_mut val value/2231)
+      *match*/2256 (load val (+a *match*/2255 8))
+      Pmakearray_arg/2257 (load val (+a *match*/2256 8))
+      Pmakearray_arg/2258 (load val *match*/2256)
+      Pmakearray/2260
+        (alloc{lqtree/lqtree.ml:196,43-57} 3326
+          (load float64 (load val *match*/2255))
+          (load float64 Pmakearray_arg/2258)
+          (load float64 Pmakearray_arg/2257))
+      sequence/2263
+        (app{lqtree/lqtree.ml:196,6-57} "camlVec_array.set_486"
+          (load_mut val node/2234) idx/2233 Pmakearray/2260 val)
+      apply_arg/2264 (load_mut val (+a value/2231 8))
+      Pbigarrayset/2267
+        (seq
+          (let ba/3009 (load_mut val (load_mut val (+a node/2234 8)))
+            (store int
+              (+a
+                (+a (load_mut int (+a ba/3009 8))
+                  (<<
+                    (seq
+                      (checkbound{lqtree/lqtree.ml:197,6-46;vec_array/vec_array.ml:222,47-67}
+                        (load_mut int (+a ba/3009 40)) (>>s idx/2233 1))
+                      idx/2233)
+                    2))
+                -4)
+              (>>s apply_arg/2264 1)))
+          1)
+      apply_arg/2268 (load_mut val (+a value/2231 16))
+      Pbigarrayset/2271
+        (seq
+          (let ba/3010 (load_mut val (load_mut val (+a node/2234 16)))
+            (store int
+              (+a
+                (+a (load_mut int (+a ba/3010 8))
+                  (<<
+                    (seq
+                      (checkbound{lqtree/lqtree.ml:198,6-38;vec_array/vec_array.ml:222,47-67}
+                        (load_mut int (+a ba/3010 40)) (>>s idx/2233 1))
+                      idx/2233)
+                    2))
+                -4)
+              (>>s apply_arg/2268 1)))
+          1)
+      apply_arg/2272 (load val (+a value/2231 24))
+      apply_arg/2273 (load_mut val (+a node/2234 24))
+      Pmakearray_arg/3011 (load_mut float64 (+a apply_arg/2272 24))
+      Pmakearray_arg/3012 (load_mut float64 (+a apply_arg/2272 16))
+      Pmakearray_arg/3013 (load_mut float64 (+a apply_arg/2272 8))
+      Pmakearray/2278
+        (alloc{lqtree/lqtree.ml:199,6-40;lqtree/lqtree.ml:46,31-89} 4350
+          (load_mut float64 apply_arg/2272) Pmakearray_arg/3013
+          Pmakearray_arg/3012 Pmakearray_arg/3011))
+     (app{lqtree/lqtree.ml:199,6-40;lqtree/lqtree.ml:46,4-89}
+       "camlVec_array.set_702" apply_arg/2273 idx/2233 Pmakearray/2278 val))))
+
+(function{lqtree/lqtree.ml:202,10-288} camlLqtree.add_722
+     (node/2281: val value/2280: val)
+ (let
+   (*match*/2282 (load_mut val value/2280)
+    *match*/2283 (load val (+a *match*/2282 8))
+    Pmakearray_arg/2284 (load val (+a *match*/2283 8))
+    Pmakearray_arg/2285 (load val *match*/2283)
+    Pmakearray/2287
+      (alloc{lqtree/lqtree.ml:205,42-56} 3326
+        (load float64 (load val *match*/2282))
+        (load float64 Pmakearray_arg/2285)
+        (load float64 Pmakearray_arg/2284))
+    sequence/2290
+      (app{lqtree/lqtree.ml:205,4-56} "camlVec_array.add_last_430"
+        (load_mut val node/2281) Pmakearray/2287 val)
+    apply_arg/2291 (load_mut val (+a value/2280 8))
+    sequence/2294
+      (app{lqtree/lqtree.ml:206,4-45} "camlVec_array.add_last_834"
+        (load_mut val (+a node/2281 8)) apply_arg/2291 val)
+    apply_arg/2295 (load_mut val (+a value/2280 16))
+    sequence/2298
+      (app{lqtree/lqtree.ml:207,4-37} "camlVec_array.add_last_834"
+        (load_mut val (+a node/2281 16)) apply_arg/2295 val)
+    apply_arg/2299 (load val (+a value/2280 24))
+    apply_arg/2300 (load_mut val (+a node/2281 24))
+    Pmakearray_arg/3014 (load_mut float64 (+a apply_arg/2299 24))
+    Pmakearray_arg/3015 (load_mut float64 (+a apply_arg/2299 16))
+    Pmakearray_arg/3016 (load_mut float64 (+a apply_arg/2299 8))
+    Pmakearray/2305
+      (alloc{lqtree/lqtree.ml:208,4-34;lqtree/lqtree.ml:53,6-64} 4350
+        (load_mut float64 apply_arg/2299) Pmakearray_arg/3016
+        Pmakearray_arg/3015 Pmakearray_arg/3014))
+   (app{lqtree/lqtree.ml:208,4-34;lqtree/lqtree.ml:51,4-104}
+     "camlVec_array.add_last_636" apply_arg/2300 Pmakearray/2305 val)))
+
+(function{lqtree/lqtree.ml:213,13-271} camlLqtree.new_ts_781
+     (param/2307: val)
+ (let
+   (Pmakeblock/2315
+      (alloc{lqtree/lqtree.ml:214,20-52;vec_array/vec_array.ml:101,4-23} 2048
+        (app{lqtree/lqtree.ml:214,20-52;vec_array/vec_array.ml:100,14-53}
+          "camlStdlib__Bigarray.create_475" 3 1 2001 7 val)
+        1)
+    Pmakeblock/2322
+      (alloc{lqtree/lqtree.ml:215,19-48;vec_array/vec_array.ml:204,4-23} 2048
+        (app{lqtree/lqtree.ml:215,19-48;vec_array/vec_array.ml:203,14-53}
+          "camlStdlib__Bigarray.create_354" 17 1 2001 val)
+        1)
+    Pmakeblock/2329
+      (alloc{lqtree/lqtree.ml:216,15-44;vec_array/vec_array.ml:204,4-23} 2048
+        (app{lqtree/lqtree.ml:216,15-44;vec_array/vec_array.ml:203,14-53}
+          "camlStdlib__Bigarray.create_354" 17 1 2001 val)
+        1)
+    Pmakeblock/2337
+      (alloc{lqtree/lqtree.ml:217,16-48;vec_array/vec_array.ml:154,4-23} 2048
+        (app{lqtree/lqtree.ml:217,16-48;vec_array/vec_array.ml:153,14-53}
+          "camlStdlib__Bigarray.create_475" 3 1 2001 9 val)
+        1))
+   (alloc{lqtree/lqtree.ml:218,4-40} 4096 Pmakeblock/2315 Pmakeblock/2322
+     Pmakeblock/2329 Pmakeblock/2337)))
+
+(function{lqtree/lqtree.ml:221,15-336} camlLqtree.validate_817
+     (node/2339: val)
+ (let
+   (Pfield/2341 (load_mut val (+a (load_mut val node/2339) 8))
+    Pfield/2343 (load_mut val (+a (load_mut val (+a node/2339 8)) 8))
+    Pfield/2345 (load_mut val (+a (load_mut val (+a node/2339 16)) 8))
+    Pfield/2347 (load_mut val (+a (load_mut val (+a node/2339 24)) 8))
+    sequence/2349
+      (if (== Pfield/2341 Pfield/2343) 1
+        (raise{lqtree/lqtree.ml:227,4-33} "camlLqtree__Pmakeblock_1655"))
+    sequence/2351
+      (if (== Pfield/2341 Pfield/2345) 1
+        (raise{lqtree/lqtree.ml:228,4-29} "camlLqtree__Pmakeblock_1656"))
+    sequence/2353
+      (if (== Pfield/2341 Pfield/2347) 1
+        (raise{lqtree/lqtree.ml:229,4-30} "camlLqtree__Pmakeblock_1657")))
+   1))
+
+(function{lqtree/lqtree.ml:233,16-89} camlLqtree.nodes_len_899
+     (nodes/2364: val)
+ (load_mut val (+a (load_mut val (+a nodes/2364 8)) 8)))
+
+(function{lqtree/lqtree.ml:238,12-178} camlLqtree.clear_913 (nodes/2367: val)
+ (let
+   (Psetfield/2370 (seq (store val (+a (load_mut val nodes/2367) 8) 1) 1)
+    Psetfield/2373
+      (seq (store val (+a (load_mut val (+a nodes/2367 8)) 8) 1) 1)
+    Psetfield/2376
+      (seq (store val (+a (load_mut val (+a nodes/2367 16)) 8) 1) 1))
+   (store val (+a (load_mut val (+a nodes/2367 24)) 8) 1) 1))
+
+(function{lqtree/lqtree.ml:252,12-151} camlLqtree.new_t_959 (bbox/2569: val)
+ (let
+   (nodes/2572
+      (app{lqtree/lqtree.ml:253,16-30} "camlLqtree.new_ts_781" 1 val)
+    Pmakeblock/2576
+      (alloc{lqtree/lqtree.ml:254,15-45;lqtree/lqtree.ml:122,31-73} 4096
+        "camlLqtree__Pmakeblock_2781" 1 1 bbox/2569)
+    sequence/2578
+      (app{lqtree/lqtree.ml:255,4-23} "camlLqtree.add_722" nodes/2572
+        Pmakeblock/2576 val))
+   (alloc{lqtree/lqtree.ml:256,4-13} 1024 nodes/2572)))
+
+(function{lqtree/lqtree.ml:259,16-556} camlLqtree.subdivide_987
+     (qt/2632: val node_idx/2631: val)
+ (let
+   (Pfield/2635
+      (load_mut val (+a (load_mut val (+a (load val qt/2632) 8)) 8))
+    node/2639
+      (app{lqtree/lqtree.ml:261,15-46} "camlLqtree.get_533"
+        (load val qt/2632) node_idx/2631 9 val)
+    sequence/2646
+      (if
+        (!=
+          (if (== (load_mut val (+a node/2639 8)) 1)
+            (+
+              (<< (!=f (load float64 (load val (load_mut val node/2639))) 0.)
+                1)
+              1)
+            5)
+          5)
+        1 (raise{lqtree/lqtree.ml:262,4-42} "camlLqtree__Pmakeblock_1660"))
+    Pmakeblock_arg/2647 (load val (+a node/2639 24))
+    Pmakeblock_arg/2648 (load_mut val (+a node/2639 16))
+    Pmakeblock/2650
+      (alloc{lqtree/lqtree.ml:263,36-58} 4096 (load_mut val node/2639)
+        Pfield/2635 Pmakeblock_arg/2648 Pmakeblock_arg/2647)
+    sequence/2654
+      (app{lqtree/lqtree.ml:263,4-58} "camlLqtree.set_624" (load val qt/2632)
+        node_idx/2631 9 Pmakeblock/2650 val)
+    Pmakearray_arg/2655 (load_mut val (+a node/2639 16))
+    Pmakearray/2662
+      (alloc{lqtree/lqtree.ml:264,21-78} 4096 (+ Pfield/2635 2)
+        (+ Pfield/2635 4) (+ Pfield/2635 6) Pmakearray_arg/2655)
+    sequence/2665
+      (seq
+        (let_mut i/2666: int 1
+          (catch
+            (if (> i/2666 7) (exit 75)
+              (catch rec (exit 76) with(76)
+                (let
+                  (apply_arg/2667 (load val (+a node/2639 24))
+                   bbox/2671
+                     (app{lqtree/lqtree.ml:266,17-68}
+                       "camlLqtree.to_bbox_329"
+                       (app{lqtree/lqtree.ml:266,47-68}
+                         "camlLqtree.of_index_375" i/2666 val)
+                       apply_arg/2667 val)
+                   Pmakeblock/2675
+                     (alloc{lqtree/lqtree.ml:269,8-75} 4096
+                       "camlLqtree__Pmakeblock_2781" 1
+                       (seq
+                         (checkbound{lqtree/lqtree.ml:269,53-67}
+                           (>>u (load int (+a Pmakearray/2662 -8)) 9) i/2666)
+                         (load_mut int
+                           (+a (+a Pmakearray/2662 (<< i/2666 2)) -4)))
+                       bbox/2671))
+                  (app{lqtree/lqtree.ml:267,6-107} "camlLqtree.add_722"
+                    (load val qt/2632) Pmakeblock/2675 unit))
+                (let *id_prev*/3027 i/2666 (assign i/2666 (+ i/2666 2))
+                  (if (== *id_prev*/3027 7) (exit 75) []))
+                (exit 76)))
+          with(75) []))
+        1))
+   Pfield/2635))
+
+(function{lqtree/lqtree.ml:274,21-690} camlLqtree.subdivide_leaf_1090
+     (qt/2404: val node_idx/2403: val)
+ (let
+   (Pfield/2407
+      (load_mut val (+a (load_mut val (+a (load val qt/2404) 8)) 8))
+    node/2411
+      (app{lqtree/lqtree.ml:277,15-46} "camlLqtree.get_533"
+        (load val qt/2404) node_idx/2403 9 val)
+    sequence/2418
+      (if
+        (==
+          (if (== (load_mut val (+a node/2411 8)) 1)
+            (+
+              (<< (!=f (load float64 (load val (load_mut val node/2411))) 0.)
+                1)
+              1)
+            5)
+          3)
+        1 (raise{lqtree/lqtree.ml:278,4-41} "camlLqtree__Pmakeblock_1661"))
+    *match*/2419 (load_mut val node/2411)
+    lp/2420 (load val (+a *match*/2419 8)) lm/2421 (load val *match*/2419)
+    Pmakeblock_arg/2422 (load val (+a node/2411 24))
+    Pmakeblock_arg/2423 (load_mut val (+a node/2411 16))
+    Pmakeblock/2425
+      (alloc{lqtree/lqtree.ml:280,36-58} 4096 (load_mut val node/2411)
+        Pfield/2407 Pmakeblock_arg/2423 Pmakeblock_arg/2422)
+    sequence/2429
+      (app{lqtree/lqtree.ml:280,4-58} "camlLqtree.set_624" (load val qt/2404)
+        node_idx/2403 9 Pmakeblock/2425 val)
+    Pmakearray_arg/2430 (load_mut val (+a node/2411 16))
+    Pmakearray/2437
+      (alloc{lqtree/lqtree.ml:281,21-78} 4096 (+ Pfield/2407 2)
+        (+ Pfield/2407 4) (+ Pfield/2407 6) Pmakearray_arg/2430)
+    sequence/2440
+      (seq
+        (let_mut i/2441: int 1
+          (catch
+            (if (> i/2441 7) (exit 77)
+              (catch rec (exit 78) with(78)
+                (let
+                  (apply_arg/2442 (load val (+a node/2411 24))
+                   bbox/2446
+                     (app{lqtree/lqtree.ml:283,17-68}
+                       "camlLqtree.to_bbox_329"
+                       (app{lqtree/lqtree.ml:283,47-68}
+                         "camlLqtree.of_index_375" i/2441 val)
+                       apply_arg/2442 val)
+                   centroid/2449
+                     (if
+                       (!=
+                         (app{lqtree/lqtree.ml:284,24-51}
+                           "camlLqtree.contains_point_127" lp/2420 bbox/2446
+                           val)
+                         1)
+                       (alloc{lqtree/lqtree.ml:284,57-63} 2048 lm/2421
+                         lp/2420)
+                       "camlLqtree__Pmakeblock_2781")
+                   Pmakeblock_arg/2450
+                     (seq
+                       (checkbound{lqtree/lqtree.ml:285,57-71}
+                         (>>u (load int (+a Pmakearray/2437 -8)) 9) i/2441)
+                       (load_mut int
+                         (+a (+a Pmakearray/2437 (<< i/2441 2)) -4)))
+                   Pmakeblock/2452
+                     (alloc{lqtree/lqtree.ml:285,24-79} 4096 centroid/2449 1
+                       Pmakeblock_arg/2450 bbox/2446))
+                  (app{lqtree/lqtree.ml:285,6-79} "camlLqtree.add_722"
+                    (load val qt/2404) Pmakeblock/2452 unit))
+                (let *id_prev*/3028 i/2441 (assign i/2441 (+ i/2441 2))
+                  (if (== *id_prev*/3028 7) (exit 77) []))
+                (exit 78)))
+          with(77) []))
+        1))
+   Pfield/2407))
+
+(function{lqtree/lqtree.ml:290,17-247} camlLqtree.node_check_1204
+     (pos1/2382: val cp/2381: val bbox/2380: val)
+ (let
+   (apply_arg/2383 (load val (+a pos1/2382 8))
+    Psubfloat/3017
+      (-f (load float64 (load val (+a cp/2381 8)))
+        (load float64 apply_arg/2383))
+    apply_arg/2386 (load val pos1/2382)
+    Psubfloat/3018
+      (-f (load float64 (load val cp/2381)) (load float64 apply_arg/2386))
+    inside_bbox/2393
+      (app{lqtree/lqtree.ml:292,22-51} "camlLqtree.contains_point_127"
+        pos1/2382 bbox/2380 val)
+    apply_arg/3019 (load_mut float64 bbox/2380)
+    Psubfloat/3020 (-f (load_mut float64 (+a bbox/2380 16)) apply_arg/3019))
+   (if
+     (>f
+       (*f
+         (+f (*f Psubfloat/3018 Psubfloat/3018)
+           (*f Psubfloat/3017 Psubfloat/3017))
+         3.)
+       (*f Psubfloat/3020 Psubfloat/3020))
+     (- 4 inside_bbox/2393) 1)))
+
+(function{lqtree/lqtree.ml:304,19-719} camlLqtree.acc_by_qtree_1244
+     (pos1/2689: val q/2688: val)
+ (let
+   set_of_closures/2690
+     (alloc{lqtree/lqtree.ml:305,20-641} 4343 "caml_curry3"
+       216172782113783815 "camlLqtree.acc_aux_1252" pos1/2689)
+   (app{lqtree/lqtree.ml:319,4-20} "camlLqtree.acc_aux_1252" q/2688 1
+     "camlNbody__const_block_522" set_of_closures/2690 val)))
+
+(function{lqtree/lqtree.ml:305,20-641} camlLqtree.acc_aux_1252
+     (q/2697: val node_idx/2696: val acc/2695: val env/2694: val)
+ (let
+   (node/2701
+      (app{lqtree/lqtree.ml:306,17-47} "camlLqtree.get_533" (load val q/2697)
+        node_idx/2696 9 val)
+    *match*/2702 (load_mut val node/2701)
+    cp/2703 (load val (+a *match*/2702 8)) cm/2704 (load val *match*/2702))
+   (switch
+     (>>s
+       (if (== (load_mut val (+a node/2701 8)) 1)
+         (+
+           (<< (!=f (load float64 (load val (load_mut val node/2701))) 0.) 1)
+           1)
+         5)
+       1)
+     
+   case 0:
+     (if (== (load_mut val (+a node/2701 16)) 1) acc/2695
+       (let apply_arg/2712 (load_mut val (+a node/2701 16))
+         (app{lqtree/lqtree.ml:310,17-40} "camlLqtree.acc_aux_1252" q/2697
+           apply_arg/2712 acc/2695 env/2694 val)))
+   case 1:
+     (if (== (load_mut val (+a node/2701 16)) 1)
+       (let
+         (apply_arg/2727
+            (app{lqtree/lqtree.ml:311,42-59} "camlNbody.acc_on_439"
+              (load val (+a env/2694 24)) cm/2704 cp/2703 val)
+          apply_arg/2728 (load val (+a apply_arg/2727 8))
+          Paddfloat/3029
+            (+f (load float64 (load val (+a acc/2695 8)))
+              (load float64 apply_arg/2728))
+          apply_arg/2731 (load val apply_arg/2727))
+         (alloc{lqtree/lqtree.ml:311,35-59;nbody/nbody.ml:24,53-71} 2048
+           (alloc{lqtree/lqtree.ml:311,35-59;nbody/nbody.ml:24,53-61;src/owl/maths/owl_maths.ml:10,10-16}
+             1277
+             (+f (load float64 (load val acc/2695))
+               (load float64 apply_arg/2731)))
+           (alloc{lqtree/lqtree.ml:311,35-59;nbody/nbody.ml:24,63-71;src/owl/maths/owl_maths.ml:10,10-16}
+             1277 Paddfloat/3029)))
+       (let
+         (apply_arg/2717
+            (app{lqtree/lqtree.ml:312,44-61} "camlNbody.acc_on_439"
+              (load val (+a env/2694 24)) cm/2704 cp/2703 val)
+          apply_arg/2718 (load val (+a apply_arg/2717 8))
+          Paddfloat/3030
+            (+f (load float64 (load val (+a acc/2695 8)))
+              (load float64 apply_arg/2718))
+          apply_arg/2721 (load val apply_arg/2717)
+          Pmakeblock/2724
+            (alloc{lqtree/lqtree.ml:312,36-62;nbody/nbody.ml:24,53-71} 2048
+              (alloc{lqtree/lqtree.ml:312,36-62;nbody/nbody.ml:24,53-61;src/owl/maths/owl_maths.ml:10,10-16}
+                1277
+                (+f (load float64 (load val acc/2695))
+                  (load float64 apply_arg/2721)))
+              (alloc{lqtree/lqtree.ml:312,36-62;nbody/nbody.ml:24,63-71;src/owl/maths/owl_maths.ml:10,10-16}
+                1277 Paddfloat/3030))
+          apply_arg/2725 (load_mut val (+a node/2701 16)))
+         (app{lqtree/lqtree.ml:312,16-62} "camlLqtree.acc_aux_1252" q/2697
+           apply_arg/2725 Pmakeblock/2724 env/2694 val)))
+   case 2:
+     (let apply_arg/2735 (load val (+a node/2701 24))
+       (catch
+         (if
+           (!=
+             (app{lqtree/lqtree.ml:313,18-46} "camlLqtree.node_check_1204"
+               (load val (+a env/2694 24)) cp/2703 apply_arg/2735 val)
+             1)
+           (if (== (load_mut val (+a node/2701 16)) 1)
+             (let
+               (apply_arg/2754
+                  (app{lqtree/lqtree.ml:314,15-32} "camlNbody.acc_on_439"
+                    (load val (+a env/2694 24)) cm/2704 cp/2703 val)
+                apply_arg/2755 (load val (+a apply_arg/2754 8))
+                Paddfloat/3031
+                  (+f (load float64 (load val (+a acc/2695 8)))
+                    (load float64 apply_arg/2755))
+                apply_arg/2758 (load val apply_arg/2754))
+               (alloc{lqtree/lqtree.ml:314,8-32;nbody/nbody.ml:24,53-71} 2048
+                 (alloc{lqtree/lqtree.ml:314,8-32;nbody/nbody.ml:24,53-61;src/owl/maths/owl_maths.ml:10,10-16}
+                   1277
+                   (+f (load float64 (load val acc/2695))
+                     (load float64 apply_arg/2758)))
+                 (alloc{lqtree/lqtree.ml:314,8-32;nbody/nbody.ml:24,63-71;src/owl/maths/owl_maths.ml:10,10-16}
+                   1277 Paddfloat/3031)))
+             (exit 79))
+           (exit 79))
+       with(79)
+         (let apply_arg/2739 (load val (+a node/2701 24))
+           (if
+             (!=
+               (app{lqtree/lqtree.ml:315,18-46} "camlLqtree.node_check_1204"
+                 (load val (+a env/2694 24)) cp/2703 apply_arg/2739 val)
+               1)
+             (let
+               (apply_arg/2744
+                  (app{lqtree/lqtree.ml:316,36-53} "camlNbody.acc_on_439"
+                    (load val (+a env/2694 24)) cm/2704 cp/2703 val)
+                apply_arg/2745 (load val (+a apply_arg/2744 8))
+                Paddfloat/3032
+                  (+f (load float64 (load val (+a acc/2695 8)))
+                    (load float64 apply_arg/2745))
+                apply_arg/2748 (load val apply_arg/2744)
+                Pmakeblock/2751
+                  (alloc{lqtree/lqtree.ml:316,28-54;nbody/nbody.ml:24,53-71}
+                    2048
+                    (alloc{lqtree/lqtree.ml:316,28-54;nbody/nbody.ml:24,53-61;src/owl/maths/owl_maths.ml:10,10-16}
+                      1277
+                      (+f (load float64 (load val acc/2695))
+                        (load float64 apply_arg/2748)))
+                    (alloc{lqtree/lqtree.ml:316,28-54;nbody/nbody.ml:24,63-71;src/owl/maths/owl_maths.ml:10,10-16}
+                      1277 Paddfloat/3032))
+                apply_arg/2752 (load_mut val (+a node/2701 16)))
+               (app{lqtree/lqtree.ml:316,8-54} "camlLqtree.acc_aux_1252"
+                 q/2697 apply_arg/2752 Pmakeblock/2751 env/2694 val))
+             (let apply_arg/2742 (load_mut val (+a node/2701 8))
+               (app{lqtree/lqtree.ml:317,16-43} "camlLqtree.acc_aux_1252"
+                 q/2697 apply_arg/2742 acc/2695 env/2694 val)))))))))
+
+(function{lqtree/lqtree.ml:322,13-1163} camlLqtree.insert_1364
+     (qt/2468: val param/2467: val)
+ (let
+   (pos/2469 (load val (+a param/2467 8)) m/2470 (load val param/2467)
+    set_of_closures/2471
+      (alloc{lqtree/lqtree.ml:323,23-1090} 5367 "caml_curry2"
+        144115188075855879 "camlLqtree.insert_aux_1379" m/2470 pos/2469))
+   (app{lqtree/lqtree.ml:349,4-19} "camlLqtree.insert_aux_1379" qt/2468 1
+     set_of_closures/2471 val)))
+
+(function{lqtree/lqtree.ml:323,23-1090} camlLqtree.insert_aux_1379
+     (q/2476: val node_idx/2475: val env/2474: val)
+ (let
+   node/2480
+     (app{lqtree/lqtree.ml:324,17-47} "camlLqtree.get_533" (load val q/2476)
+       node_idx/2475 9 val)
+   (switch
+     (>>s
+       (if (== (load_mut val (+a node/2480 8)) 1)
+         (+
+           (<< (!=f (load float64 (load val (load_mut val node/2480))) 0.) 1)
+           1)
+         5)
+       1)
+     
+   case 0:
+     (let
+       (Psetfield_arg/2485
+          (alloc{lqtree/lqtree.ml:331,25-31} 2048 (load val (+a env/2474 24))
+            (load val (+a env/2474 32)))
+        Psetfield/2486
+          (seq
+            (extcall "caml_modify"{lqtree/lqtree.ml:331,8-31} node/2480
+              Psetfield_arg/2485 ->unit)
+            1))
+       (app{lqtree/lqtree.ml:332,8-43} "camlLqtree.set_624" (load val q/2476)
+         node_idx/2475 9 node/2480 val))
+   case 1:
+     (let
+       (*match*/2490 (load_mut val node/2480)
+        apply_arg/2491 (load val (+a *match*/2490 8))
+        apply_arg/2493 (load val (+a apply_arg/2491 8))
+        Psubfloat/3033
+          (-f (load float64 (load val (+a (load val (+a env/2474 32)) 8)))
+            (load float64 apply_arg/2493))
+        apply_arg/2496 (load val apply_arg/2491)
+        Psubfloat/3034
+          (-f (load float64 (load val (load val (+a env/2474 32))))
+            (load float64 apply_arg/2496)))
+       (if
+         (<f
+           (+f (*f Psubfloat/3034 Psubfloat/3034)
+             (*f Psubfloat/3033 Psubfloat/3033))
+           1e-05)
+         (let
+           (apply_arg/2524 (load val *match*/2490)
+            Pmakeblock/2526
+              (alloc{lqtree/lqtree.ml:337,27-39} 2048
+                (alloc{lqtree/lqtree.ml:337,27-34;src/owl/maths/owl_maths.ml:10,10-16}
+                  1277
+                  (+f (load float64 (load val (+a env/2474 24)))
+                    (load float64 apply_arg/2524)))
+                (load val (+a env/2474 32)))
+            Psetfield/2527
+              (seq
+                (extcall "caml_modify"{lqtree/lqtree.ml:337,10-39} node/2480
+                  Pmakeblock/2526 ->unit)
+                1))
+           (app{lqtree/lqtree.ml:338,10-45} "camlLqtree.set_624"
+             (load val q/2476) node_idx/2475 9 node/2480 val))
+         (let
+           (children/2504
+              (app{lqtree/lqtree.ml:341,25-50}
+                "camlLqtree.subdivide_leaf_1090" q/2476 node_idx/2475 val)
+            apply_arg/2505
+              (alloc{lqtree/lqtree.ml:342,56-64} 2048
+                (load val (+a env/2474 24)) (load val (+a env/2474 32)))
+            new_centroid/2508
+              (app{lqtree/lqtree.ml:342,29-64} "camlLqtree.centroid_sum_77"
+                (load_mut val node/2480) apply_arg/2505 val)
+            sequence/2509
+              (seq
+                (extcall "caml_modify"{lqtree/lqtree.ml:343,10-39} node/2480
+                  new_centroid/2508 ->unit)
+                1)
+            sequence/2510 (seq (store val (+a node/2480 8) children/2504) 1)
+            sequence/2514
+              (app{lqtree/lqtree.ml:345,10-45} "camlLqtree.set_624"
+                (load val q/2476) node_idx/2475 9 node/2480 val)
+            apply_arg/2515 (load val (+a node/2480 24))
+            q_idx/2518
+              (+
+                (<<
+                  (>>s
+                    (app{lqtree/lqtree.ml:346,22-53}
+                      "camlLqtree.contains_300" (load val (+a env/2474 32))
+                      apply_arg/2515 val)
+                    1)
+                  1)
+                1))
+           (app{lqtree/lqtree.ml:347,10-41} "camlLqtree.insert_aux_1379"
+             q/2476 (+ (+ children/2504 q_idx/2518) -1) env/2474 val))))
+   case 2:
+     (let
+       (apply_arg/2531 (load val (+a node/2480 24))
+        i/2534
+          (+
+            (<<
+              (>>s
+                (app{lqtree/lqtree.ml:327,16-47} "camlLqtree.contains_300"
+                  (load val (+a env/2474 32)) apply_arg/2531 val)
+                1)
+              1)
+            1)
+        apply_arg/2535
+          (alloc{lqtree/lqtree.ml:328,52-60} 2048 (load val (+a env/2474 24))
+            (load val (+a env/2474 32)))
+        Psetfield_arg/2538
+          (app{lqtree/lqtree.ml:328,25-60} "camlLqtree.centroid_sum_77"
+            (load_mut val node/2480) apply_arg/2535 val)
+        Psetfield/2539
+          (seq
+            (extcall "caml_modify"{lqtree/lqtree.ml:328,8-60} node/2480
+              Psetfield_arg/2538 ->unit)
+            1)
+        Paddint/2541 (+ (+ (load_mut val (+a node/2480 8)) i/2534) -1))
+       (app{lqtree/lqtree.ml:329,8-40} "camlLqtree.insert_aux_1379" q/2476
+         Paddint/2541 env/2474 val)))))
+
+(function{lqtree/lqtree.ml:352,21-205} camlLqtree.build_qtree_in_1491
+     (bodies/2581: val bb/2580: val)
+ (let
+   (q/2583
+      (app{lqtree/lqtree.ml:353,12-20} "camlLqtree.new_t_959" bb/2580 val)
+    dup_set_of_closures/2584 "camlLqtree.1"
+    sequence/2586
+      (app{lqtree/lqtree.ml:354,4-112;list.ml:110,13-64}
+        "camlLqtree.iter_6791" bodies/2581 q/2583 dup_set_of_closures/2584
+        val))
+   q/2583))
+
+(function{lqtree/lqtree.ml:362,15-167} camlLqtree.populate_1522
+     (qt/2554: val bodies/2553: val)
+ (let dup_set_of_closures/2555 "camlLqtree.2"
+   (app{lqtree/lqtree.ml:363,4-113;list.ml:110,13-64} "camlLqtree.iter_6009"
+     bodies/2553 qt/2554 dup_set_of_closures/2555 val)))
+
+(function{lqtree/lqtree.ml:370,12-265} camlLqtree.clear_1549 (q/2599: val)
+ (if (== (load_mut val (+a (load_mut val (+a (load val q/2599) 8)) 8)) 1) 1
+   (let
+     (bbox/2610
+        (load val
+          (+a
+            (app{lqtree/lqtree.ml:374,17-40} "camlLqtree.get_533"
+              (load val q/2599) 1 9 val)
+            24))
+      apply_arg/2611 (load val q/2599)
+      Psetfield/2614
+        (seq (store val (+a (load_mut val apply_arg/2611) 8) 1) 1)
+      Psetfield/2617
+        (seq (store val (+a (load_mut val (+a apply_arg/2611 8)) 8) 1) 1)
+      Psetfield/2620
+        (seq (store val (+a (load_mut val (+a apply_arg/2611 16)) 8) 1) 1)
+      Psetfield/2623
+        (seq (store val (+a (load_mut val (+a apply_arg/2611 24)) 8) 1) 1)
+      Pmakeblock/2627
+        (alloc{lqtree/lqtree.ml:377,17-47;lqtree/lqtree.ml:122,31-73} 4096
+          "camlLqtree__Pmakeblock_2781" 1 1 bbox/2610))
+     (app{lqtree/lqtree.ml:378,6-27} "camlLqtree.add_722" (load val q/2599)
+       Pmakeblock/2627 val))))
+
+(data
+ int 8960
+ global "camlLqtree"
+ "camlLqtree":
+ addr "camlOwl_maths.add_455_closure"
+ addr "camlOwl_maths.sub_463_closure"
+ addr "camlOwl_maths.div_479_closure"
+ addr "camlLqtree.centroid_sum_77_closure"
+ addr "camlLqtree__Pmakeblock_1642"
+ addr "camlLqtree__Pmakeblock_1647"
+ addr "camlLqtree__Pmakeblock_1745"
+ addr "camlLqtree__Pmakeblock_1728")
+(data
+ int 1793
+ global "camlLqtree__Pmakeblock_arg_7502"
+ "camlLqtree__Pmakeblock_arg_7502":
+ addr "camlLqtree__apply_arg_7501")
+(data
+ int 1795
+ global "camlLqtree__apply_arg_7501"
+ "camlLqtree__apply_arg_7501":
+ addr "camlLqtree__Pmakeblock_7500")
+(data
+ int 1793
+ global "camlLqtree__Pmakeblock_7500"
+ "camlLqtree__Pmakeblock_7500":
+ addr "camlLqtree__Pmakeblock_7499")
+(data
+ int 2816
+ global "camlLqtree__Pmakeblock_7499"
+ "camlLqtree__Pmakeblock_7499":
+ addr "camlLqtree__Pmakeblock_arg_7498"
+ int 1)
+(data
+ int 1792
+ global "camlLqtree__Pmakeblock_arg_7498"
+ "camlLqtree__Pmakeblock_arg_7498":
+ addr "camlPpx_expect_runtime__Current_file__const_immstring_92")
+(data
+ int 2816
+ global "camlLqtree__Pmakeblock_7490"
+ "camlLqtree__Pmakeblock_7490":
+ addr "caml_exn_Failure"
+ addr "camlPpx_inline_test_lib__const_immstring_2517")
+(data
+ int 1792
+ global "camlLqtree__Psetfield_arg_7489"
+ "camlLqtree__Psetfield_arg_7489":
+ addr "camlLqtree__const_immstring_1599")
+(data
+ int 1792
+ global "camlLqtree__Pmakeblock_arg_7488"
+ "camlLqtree__Pmakeblock_arg_7488":
+ addr "camlPpx_expect_runtime__Current_file__const_immstring_33")
+(data
+ int 1792
+ global "camlLqtree__Pmakeblock_arg_7487"
+ "camlLqtree__Pmakeblock_arg_7487":
+ addr "camlPpx_expect_runtime__Current_file__const_immstring_35")
+(data
+ int 2816
+ global "camlLqtree__Pmakeblock_7486"
+ "camlLqtree__Pmakeblock_7486":
+ addr "camlLqtree__Pmakeblock_7485"
+ int 1)
+(data
+ int 2816
+ global "camlLqtree__Pmakeblock_7485"
+ "camlLqtree__Pmakeblock_7485":
+ addr "camlPpx_expect_runtime__Current_file__const_immstring_46"
+ addr "camlLqtree__Pmakeblock_7484")
+(data
+ int 1792
+ global "camlLqtree__Pmakeblock_7484"
+ "camlLqtree__Pmakeblock_7484":
+ addr "camlLqtree__const_immstring_889")
+(data
+ int 2045
+ global "camlLqtree__Pfloatcomp_arg_7480"
+ "camlLqtree__Pfloatcomp_arg_7480":
+ double 1e-05)
+(data
+ int 2045
+ global "camlLqtree__prim_7477"
+ "camlLqtree__prim_7477":
+ double 3.)
+(data
+ int 2045
+ global "camlLqtree__Pfloatcomp_arg_7476"
+ "camlLqtree__Pfloatcomp_arg_7476":
+ double 0.)
+(data
+ int 2045
+ global "camlLqtree__prim_7470"
+ "camlLqtree__prim_7470":
+ double 2.)
+(data
+ int 2045
+ global "camlLqtree__prim_7469"
+ "camlLqtree__prim_7469":
+ double 1.)
+(data
+ int 2816
+ global "camlLqtree__Pmakeblock_4103"
+ "camlLqtree__Pmakeblock_4103":
+ addr "caml_exn_Failure"
+ addr "camlLqtree__const_immstring_388")
+(data)
+(data)
+(data)
+(data)
+(data)
+(data
+ int 2816
+ global "camlLqtree__Pmakeblock_2781"
+ "camlLqtree__Pmakeblock_2781":
+ addr "camlLqtree__Pfloatcomp_arg_7476"
+ addr "camlNbody__const_block_522")
+(data)
+(data)
+(data)
+(data)
+(data
+ int 12032
+ global "camlLqtree__Pmakeblock_1745"
+ "camlLqtree__Pmakeblock_1745":
+ addr "camlLqtree.new_node_399_closure"
+ addr "camlLqtree.node_type_411_closure"
+ addr "camlLqtree.equal_435_closure"
+ addr "camlLqtree.get_533_closure"
+ addr "camlLqtree.set_624_closure"
+ addr "camlLqtree.add_722_closure"
+ int 2001
+ addr "camlLqtree.new_ts_781_closure"
+ addr "camlLqtree.validate_817_closure"
+ addr "camlLqtree.nodes_len_899_closure"
+ addr "camlLqtree.clear_913_closure")
+(data)
+(data
+ int 2816
+ global "camlLqtree__Pmakeblock_1661"
+ "camlLqtree__Pmakeblock_1661":
+ addr "caml_exn_Assert_failure"
+ addr "camlLqtree__const_block_1122")
+(data
+ int 2816
+ global "camlLqtree__Pmakeblock_1660"
+ "camlLqtree__Pmakeblock_1660":
+ addr "caml_exn_Assert_failure"
+ addr "camlLqtree__const_block_1018")
+(data)
+(data)
+(data
+ int 2816
+ global "camlLqtree__Pmakeblock_1657"
+ "camlLqtree__Pmakeblock_1657":
+ addr "caml_exn_Assert_failure"
+ addr "camlLqtree__const_block_890")
+(data
+ int 2816
+ global "camlLqtree__Pmakeblock_1656"
+ "camlLqtree__Pmakeblock_1656":
+ addr "caml_exn_Assert_failure"
+ addr "camlLqtree__const_block_877")
+(data
+ int 2816
+ global "camlLqtree__Pmakeblock_1655"
+ "camlLqtree__Pmakeblock_1655":
+ addr "caml_exn_Assert_failure"
+ addr "camlLqtree__const_block_864")
+(data)
+(data)
+(data)
+(data)
+(data)
+(data)
+(data)
+(data
+ int 4864
+ global "camlLqtree__Pmakeblock_1647"
+ "camlLqtree__Pmakeblock_1647":
+ addr "camlLqtree.contains_300_closure"
+ addr "camlLqtree.to_bbox_329_closure"
+ addr "camlLqtree.to_index_364_closure"
+ addr "camlLqtree.of_index_375_closure")
+(data)
+(data)
+(data)
+(data)
+(data
+ int 7936
+ global "camlLqtree__Pmakeblock_1642"
+ "camlLqtree__Pmakeblock_1642":
+ addr "camlLqtree.contains_point_127_closure"
+ addr "camlLqtree.midx_156_closure"
+ addr "camlLqtree.midy_185_closure"
+ addr "camlLqtree.size_214_closure"
+ addr "camlLqtree.get_228_closure"
+ addr "camlLqtree.set_251_closure"
+ addr "camlLqtree.add_275_closure")
+(data)
+(data)
+(data)
+(data)
+(data)
+(data)
+(data)
+(data)
+(data
+ int 2044
+ global "camlLqtree__const_immstring_1625"
+ "camlLqtree__const_immstring_1625":
+ string "Lqtree"
+ skip 1
+ byte 1)
+(data
+ int 2044
+ global "camlLqtree__const_immstring_1599"
+ "camlLqtree__const_immstring_1599":
+ string "lqtree"
+ skip 1
+ byte 1)
+(data
+ int 3840
+ global "camlLqtree__const_block_1122"
+ "camlLqtree__const_block_1122":
+ addr "camlLqtree__const_immstring_889"
+ int 557
+ int 9)
+(data
+ int 3840
+ global "camlLqtree__const_block_1018"
+ "camlLqtree__const_block_1018":
+ addr "camlLqtree__const_immstring_889"
+ int 525
+ int 9)
+(data
+ int 3840
+ global "camlLqtree__const_block_890"
+ "camlLqtree__const_block_890":
+ addr "camlLqtree__const_immstring_889"
+ int 459
+ int 9)
+(data
+ int 4092
+ global "camlLqtree__const_immstring_889"
+ "camlLqtree__const_immstring_889":
+ string "lqtree/lqtree.ml"
+ skip 7
+ byte 7)
+(data
+ int 3840
+ global "camlLqtree__const_block_877"
+ "camlLqtree__const_block_877":
+ addr "camlLqtree__const_immstring_889"
+ int 457
+ int 9)
+(data
+ int 3840
+ global "camlLqtree__const_block_864"
+ "camlLqtree__const_block_864":
+ addr "camlLqtree__const_immstring_889"
+ int 455
+ int 9)
+(data
+ int 4092
+ global "camlLqtree__const_immstring_388"
+ "camlLqtree__const_immstring_388":
+ string "Quadrant.of_index"
+ skip 6
+ byte 6)
+(data
+ int 3068
+ global "camlLqtree__const_immstring_56"
+ "camlLqtree__const_immstring_56":
+ string "lqtree.ml"
+ skip 6
+ byte 6)
+(function camlLqtree.entry ()
+ (app{lqtree/lqtree.ml:1,0-0;runtime/ppx_module_timer_runtime.ml:135,31-74}
+   "camlPpx_module_timer_runtime.record_start_186"
+   (load_mut val "camlPpx_module_timer_runtime__module_timer_1085")
+   "camlLqtree__const_immstring_1625" unit)
+ (extcall "caml_modify"{lqtree/lqtree.ml:1,0-0;runtime-lib/benchmark_accumulator.ml:13,16-34}
+   (load_mut val "camlPpx_bench_lib__Benchmark_accumulator__libname_ref_511")
+   "camlLqtree__const_immstring_1599" ->unit)
+ (let
+   simplify_fv/2782
+     (load_mut val
+       (load_mut val "camlPpx_expect_runtime__Current_file__Pmakeblock_274"))
+   (if (and simplify_fv/2782 1)
+     (extcall "caml_modify"{lqtree/lqtree.ml:1,0-0;runtime/current_file.ml:7,12-56}
+       (load_mut val "camlPpx_expect_runtime__Current_file__Pmakeblock_274")
+       "camlLqtree__Pmakeblock_7484" ->unit)
+     (let
+       (Pmakeblock/2791
+          (alloc{lqtree/lqtree.ml:1,0-0;runtime/current_file.ml:12,23-45;src/sexp_conv.ml:30,25-33}
+            1024 (load val simplify_fv/2782))
+        Pmakeblock_arg/2795
+          (app{lqtree/lqtree.ml:1,0-0;runtime/current_file.ml:10,6-214;src/sexp.ml:360,21-39;src/sexp.ml:358,44-60}
+            "camlSexplib0__Sexp.conv_fields_1409"
+            "camlLqtree__Pmakeblock_7486" val))
+       (raise{lqtree/lqtree.ml:1,0-0;runtime/current_file.ml:9,4-226;src/error.ml:10,26-47;src/error.ml:9,21-37}
+         (app{lqtree/lqtree.ml:1,0-0;runtime/current_file.ml:9,4-226;src/error.ml:10,26-47;src/error.ml:9,27-37}
+           "camlBase__Info.to_exn_1288"
+           (app{lqtree/lqtree.ml:1,0-0;runtime/current_file.ml:9,4-226;src/error.ml:10,32-47;src/info.ml:244,20-42}
+             "camlBase__Info.of_message_684"
+             (alloc{lqtree/lqtree.ml:1,0-0;runtime/current_file.ml:9,4-226;src/error.ml:10,32-47;src/info.ml:244,31-42}
+               1027
+               (alloc{lqtree/lqtree.ml:1,0-0;runtime/current_file.ml:10,6-214;src/sexp.ml:360,2-40}
+                 1025
+                 (alloc{lqtree/lqtree.ml:1,0-0;runtime/current_file.ml:10,6-214;src/sexp.ml:360,7-40}
+                   2048 "camlLqtree__Pmakeblock_arg_7488"
+                   (alloc{lqtree/lqtree.ml:1,0-0;runtime/current_file.ml:10,6-214;src/sexp.ml:360,21-39;src/sexp.ml:358,14-60}
+                     2048
+                     (alloc{lqtree/lqtree.ml:1,0-0;runtime/current_file.ml:10,6-214;src/sexp.ml:360,21-39;src/sexp.ml:358,14-40}
+                       1025
+                       (alloc{lqtree/lqtree.ml:1,0-0;runtime/current_file.ml:10,6-214;src/sexp.ml:360,21-39;src/sexp.ml:358,19-40}
+                         2048 "camlLqtree__Pmakeblock_arg_7487"
+                         (alloc{lqtree/lqtree.ml:1,0-0;runtime/current_file.ml:10,6-214;src/sexp.ml:360,21-39;src/sexp.ml:358,33-40}
+                           2048 Pmakeblock/2791 1)))
+                     Pmakeblock_arg/2795))))
+             val)
+           val))
+       [])))
+ (if
+   (and
+     (load_mut val (load_mut val "camlPpx_inline_test_lib__Pmakeblock_3573"))
+     1)
+   (let
+     (simplify_fv/2823
+        (seq
+          (extcall "caml_modify"{lqtree/lqtree.ml:1,0-0;runtime-lib/ppx_inline_test_lib.ml:616,4-34}
+            (load_mut val "camlPpx_inline_test_lib__Pmakeblock_3573")
+            "camlLqtree__Psetfield_arg_7489" ->unit)
+          1)
+      *match*/2825
+        (if (!= (load_mut val "camlPpx_inline_test_lib__force_drop_3571") 1)
+          -1900389787
+          (load_mut val
+            (load_mut val "camlPpx_inline_test_lib__Pmakeblock_3572"))))
+     (if (and *match*/2825 1) []
+       (let *match*/2827 (load val (+a *match*/2825 8))
+         (if
+           (!=
+             (extcall "caml_string_equal"{lqtree/lqtree.ml:1,0-0;runtime-lib/ppx_inline_test_lib.ml:620,10-42}
+               (load val (load val *match*/2827))
+               "camlLqtree__const_immstring_1599" int,int->val)
+             1)
+           (let
+             (what_to_do/2832 (load val (+a *match*/2827 8))
+              Pintcomp/2835
+                (+ (<< (>= (load val what_to_do/2832) 2050162989) 1) 1)
+              requires_partition/2836
+                (catch
+                  (if (!= Pintcomp/2835 1)
+                    (if (and (load val (+a what_to_do/2832 8)) 1) 1
+                      (exit 72))
+                    (exit 72))
+                with(72) 3))
+             (catch
+               (if
+                 (!=
+                   (extcall "caml_string_equal"{lqtree/lqtree.ml:1,0-0;runtime-lib/ppx_inline_test_lib.ml:627,12-26}
+                     "camlLqtree__const_immstring_56"
+                     "camlPpx_inline_test_lib__const_immstring_618"
+                     int,int->val)
+                   1)
+                 (if (!= requires_partition/2836 1)
+                   (seq
+                     (raise{lqtree/lqtree.ml:1,0-0;runtime-lib/ppx_inline_test_lib.ml:629,11-161;stdlib.ml:29,17-33}
+                       "camlLqtree__Pmakeblock_7490")
+                     [])
+                   (exit 73))
+                 (exit 73))
+             with(73)
+               (extcall "caml_modify"{lqtree/lqtree.ml:1,0-0;runtime-lib/ppx_inline_test_lib.ml:632,14-45;runtime-lib/ppx_inline_test_lib.ml:146,22-34}
+                 (load_mut val "camlPpx_inline_test_lib__Pmakeblock_3563")
+                 "camlLqtree__const_immstring_56" ->unit)))
+           []))))
+   [])
+ []
+ (extcall "caml_initialize" "camlLqtree__simplify_fv_4110"
+   (load_mut val (load_mut val "camlPpx_inline_test_lib__Pmakeblock_3573"))
+   ->unit)
+ (extcall "caml_initialize" "camlLqtree__cond_4109"
+   (+ (<< (and (load_mut val "camlLqtree__simplify_fv_4110") 1) 1) 1) ->unit)
+ (if (!= (load_mut val "camlLqtree__cond_4109") 1) []
+   (if
+     (!=
+       (extcall "caml_string_equal"{lqtree/lqtree.ml:380,3-3;runtime-lib/ppx_inline_test_lib.ml:642,19-35}
+         (load val (load_mut val "camlLqtree__simplify_fv_4110"))
+         "camlLqtree__const_immstring_1599" int,int->val)
+       1)
+     (extcall "caml_modify"{lqtree/lqtree.ml:380,3-3;runtime-lib/ppx_inline_test_lib.ml:642,41-60}
+       (load_mut val "camlPpx_inline_test_lib__Pmakeblock_3573") 1 ->unit)
+     []))
+ (extcall "caml_initialize" "camlLqtree__simplify_fv_2795"
+   (load_mut val
+     (load_mut val "camlPpx_expect_runtime__Current_file__Pmakeblock_274"))
+   ->unit)
+ (extcall "caml_initialize" "camlLqtree__cond_2794"
+   (+ (<< (and (load_mut val "camlLqtree__simplify_fv_2795") 1) 1) 1) ->unit)
+ (if (!= (load_mut val "camlLqtree__cond_2794") 1)
+   (seq
+     (raise{lqtree/lqtree.ml:380,3-3;runtime/current_file.ml:21,4-84;src/error.ml:10,26-47;src/error.ml:9,21-37}
+       (app{lqtree/lqtree.ml:380,3-3;runtime/current_file.ml:21,4-84;src/error.ml:10,26-47;src/error.ml:9,27-37}
+         "camlBase__Info.to_exn_1288"
+         (alloc{lqtree/lqtree.ml:380,3-3;runtime/current_file.ml:21,4-84;src/error.ml:10,32-47;src/info.ml:244,20-42;src/info.ml:185,37-56}
+           1024 "camlLqtree__Pmakeblock_arg_7502")
+         val))
+     [])
+   (extcall "caml_modify"{lqtree/lqtree.ml:380,3-3;runtime/current_file.ml:19,14-29}
+     (load_mut val "camlPpx_expect_runtime__Current_file__Pmakeblock_274") 1
+     ->unit))
+ (extcall "caml_modify"{lqtree/lqtree.ml:380,3-3;runtime-lib/benchmark_accumulator.ml:14,17-36}
+   (load_mut val "camlPpx_bench_lib__Benchmark_accumulator__libname_ref_511")
+   "camlPpx_bench_lib__Benchmark_accumulator__const_immstring_35" ->unit)
+ (app{lqtree/lqtree.ml:380,3-3;runtime/ppx_module_timer_runtime.ml:136,31-74}
+   "camlPpx_module_timer_runtime.record_until_230"
+   (load_mut val "camlPpx_module_timer_runtime__module_timer_1085")
+   "camlLqtree__const_immstring_1625" unit)
+ 1)
+
+(data)
+

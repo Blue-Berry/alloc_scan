@@ -1,0 +1,4 @@
+(executable
+ (public_name alloc_scan)
+ (name main)
+ (libraries alloc_scan core angstrom))
