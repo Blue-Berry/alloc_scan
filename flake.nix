@@ -40,6 +40,7 @@
             buildInputs = with pkgs.ocamlPackages; [
               core
               angstrom
+              vcaml
             ];
           };
 
