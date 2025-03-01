@@ -30,6 +30,7 @@ let location_parser =
   let* locs = sep_by (char ';') location_parser in
   let* _ = char '}' in
   return locs
+;;
 
 (* Parser for `(alloc{...} <Bytes> ...)` *)
 let alloc_parser =
@@ -37,13 +38,17 @@ let alloc_parser =
   let* locs = location_parser in
   let* _ = ws in
   let* bytes = take_while1 Char.is_digit in
-  return (List.map locs ~f:(fun (filepath, line, col_start, col_end) -> (filepath, line, col_start, col_end, int_of_string bytes)))
+  return
+    (List.map locs ~f:(fun (filepath, line, col_start, col_end) ->
+       filepath, line, col_start, col_end, int_of_string bytes))
 ;;
 
 let parse_alloc input =
   match parse_string ~consume:Prefix alloc_parser input with
   | Ok results -> results
-  | Error err -> failwith ("Parsing error: " ^ err)
+  | Error err ->
+    Out_channel.output_string Out_channel.stderr ("Parsing Error: " ^ err ^ "\n");
+    []
 ;;
 
 let parse_allocs input =
@@ -55,7 +60,7 @@ let parse_allocs input =
 let parse_file file =
   let input = In_channel.read_all file in
   parse_allocs input
-  |> List.fold ~init:[] ~f: List.append 
+  |> List.fold ~init:[] ~f:List.append
   |> List.fold_left ~init:"" ~f:(fun acc s ->
     let filepath, line, col_start, col_end, bytes = s in
     acc
@@ -78,4 +83,3 @@ let () =
   let output = parse_file file_path in
   print_endline output
 ;;
-
