@@ -128,7 +128,7 @@ let clear_highlights client =
 
 let highlight client namespace line col_start col_end =
   let buffer = Nvim_internal.Buffer.Or_current.Current in
-  let hl_group : string = "CurSearch" in
+  let hl_group : string = "Search" in
   let%bind changedtick = Vcaml.Buffer.get_changedtick [%here] client buffer in
   let%bind _ =
     Nvim.out_writeln
