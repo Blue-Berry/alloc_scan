@@ -13,21 +13,40 @@ let clear_highlights client =
     ~line_end:(-1)
 ;;
 
-let highlight client namespace line col_start col_end =
+let highlight client namespace line col_start col_end bytes =
   let buffer = Nvim_internal.Buffer.Or_current.Current in
   let hl_group : string = "Search" in
   let%bind changedtick = Vcaml.Buffer.get_changedtick [%here] client buffer in
-  Vcaml.Buffer.Untested.add_highlight
+  let start_inclusive = Position.{ row = line; col = col_start } in
+  let end_exclusive = Position.{ row = line; col = col_end } in
+  let virtual_text =
+    [ Highlighted_text.Chunk.{ text = string_of_int bytes; hl_group = Some "Comment" } ]
+  in
+  Buffer.Untested.create_extmark
     [%here]
     client
-    buffer
     ~changedtick
+    buffer
     ~namespace
+    ~start_inclusive
+    ~end_exclusive
     ~hl_group
-    ~line
-    ~col_start
-    ~col_end
+    ~virtual_text
+    ~virtual_text_pos:`Eol
+    ~strict:false
+    ()
 ;;
+
+(* Vcaml.Buffer.Untested.add_highlight *)
+(*   [%here] *)
+(*   client *)
+(*   buffer *)
+(*   ~changedtick *)
+(*   ~namespace *)
+(*   ~hl_group *)
+(*   ~line *)
+(*   ~col_start *)
+(*   ~col_end *)
 
 let get_buffer_name client =
   Vcaml.Buffer.get_name [%here] client Nvim_internal.Buffer.Or_current.Current
@@ -60,10 +79,10 @@ let highlight_allocs client =
   let rec loop (locs : (string * int * int * int * int) list) =
     match locs with
     | [] -> return ()
-    | (filepath, line, col_start, col_end, _) :: locs ->
+    | (filepath, line, col_start, col_end, bytes) :: locs ->
       if String.is_substring buf_name ~substring:filepath
       then (
-        let%bind _ = highlight client namespace (line - 1) col_start col_end in
+        let%bind _ = highlight client namespace (line - 1) col_start col_end bytes in
         loop locs)
       else loop locs
   in
@@ -77,11 +96,11 @@ let highlight_allocs_from_file client filepath =
   let rec loop (locs : (string * int * int * int * int) list) =
     match locs with
     | [] -> return ()
-    | (filepath, line, col_start, col_end, _) :: locs ->
+    | (filepath, line, col_start, col_end, bytes) :: locs ->
       let file = String.split_on_chars filepath ~on:[ '/' ] |> List.last_exn in
       if String.is_substring buf_name ~substring:file
       then (
-        let%bind _ = highlight client namespace (line - 1) col_start col_end in
+        let%bind _ = highlight client namespace (line - 1) col_start col_end bytes in
         loop locs)
       else loop locs
   in
