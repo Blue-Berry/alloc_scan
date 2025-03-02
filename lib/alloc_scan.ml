@@ -57,45 +57,130 @@ let parse_allocs input =
     parse_alloc sub_string)
 ;;
 
+let sort_by_file_and_line (allocs : (string * int * int * int * int) list) =
+  List.sort
+    ~compare:(fun (file1, line1, _, _, _) (file2, line2, _, _, _) ->
+      if String.equal file1 file2
+      then Int.compare line1 line2
+      else String.compare file1 file2)
+    allocs
+;;
+
+let combine_overlap_allocs (allocs : (string * int * int * int * int) list) =
+  let rec loop acc = function
+    | [] -> acc
+    | [ x ] -> x :: acc
+    | x1 :: x2 :: xs ->
+      let file, line, col_start, col_end, bytes = x1 in
+      let file', line', col_start', col_end', bytes' = x2 in
+      if String.equal file file' && line = line'
+      then
+        loop
+          acc
+          ((file, line, min col_start col_start', max col_end col_end', bytes + bytes')
+           :: xs)
+      else loop (x1 :: acc) (x2 :: xs)
+  in
+  loop [] allocs
+;;
+
+let sort_and_combine_allocs allocs =
+  allocs |> sort_by_file_and_line |> combine_overlap_allocs
+;;
+
 let parse_file file =
   let input = In_channel.read_all file in
-  parse_allocs input
-  |> List.fold ~init:[] ~f:List.append
-  |> List.fold_left ~init:"" ~f:(fun acc s ->
-    let filepath, line, col_start, col_end, bytes = s in
+  parse_allocs input |> List.fold ~init:[] ~f:List.append |> sort_and_combine_allocs
+;;
+
+let allocs_string allocs =
+  List.fold allocs ~init:"" ~f:(fun acc (filepath, line, col_start, col_end, bytes) ->
     acc
     ^ filepath
     ^ ":"
-    ^ string_of_int line
-    ^ ":"
-    ^ string_of_int col_start
-    ^ ":"
-    ^ string_of_int col_end
-    ^ ":"
-    ^ string_of_int bytes
+    ^ Int.to_string line
+    ^ ","
+    ^ Int.to_string col_start
+    ^ "-"
+    ^ Int.to_string col_end
+    ^ ";"
+    ^ Int.to_string bytes
     ^ "\n")
 ;;
 
 open Vcaml
+open Async.Deferred.Or_error.Let_syntax
 
-let highlight () =
-  let buffer = Nvim_internal.Buffer.Or_current.Current in
-  let ns_id : int = -1 in
-  let hl_group : string = "Search" in
-  let line : int = 1 in
-  let col_start : int = 1 in
-  let col_end : int = 2 in
-  let result = Nvim_internal.nvim_buf_add_highlight ~buffer ~ns_id ~hl_group ~line ~col_start ~col_end in
-  result
+let clear_highlights client =
+  let%bind namespace = Namespace.create [%here] client ~name:"alloc-scan" () in
+  Buffer.Untested.clear_namespace
+    [%here]
+    client
+    Current
+    ~namespace
+    ~line_start:0
+    ~line_end:(-1)
 ;;
 
+let highlight client namespace line col_start col_end =
+  let buffer = Nvim_internal.Buffer.Or_current.Current in
+  let hl_group : string = "Search" in
+  let%bind _ =
+    Nvim.out_writeln
+      [%here]
+      client
+      (string_of_int line ^ ":" ^ string_of_int col_start ^ "-" ^ string_of_int col_end)
+  in
+  Vcaml.Buffer.Untested.add_highlight
+    [%here]
+    client
+    buffer
+    ~namespace
+    ~hl_group
+    ~line
+    ~col_start
+    ~col_end
+;;
+
+let get_buffer_name client =
+  Vcaml.Buffer.get_name [%here] client Nvim_internal.Buffer.Or_current.Current
+;;
+
+let highlight_allocs client from_file =
+  let%bind buf_name = get_buffer_name client in
+  let%bind namespace = Namespace.create [%here] client ~name:"alloc-scan" () in
+  (* NOTE: Bufername is the relative path *)
+  let rec loop (locs : (string * int * int * int * int) list) =
+    match locs with
+    | [] -> return ()
+    | (filepath, line, col_start, col_end, _) :: locs ->
+      let file = String.split_on_chars filepath ~on:[ '/' ] |> List.last_exn in
+      if String.is_substring buf_name ~substring:file
+      then (
+        let%bind _ = highlight client namespace line col_start col_end in
+        loop locs)
+      else loop locs
+  in
+  let locs = parse_file from_file in
+  loop locs
+;;
 
 let find_allocs =
   Vcaml_plugin.Oneshot.Rpc.create
     [%here]
-    ~name:"alloc-scan"
+    ~name:"allocScan"
     ~type_:Ocaml_from_nvim.Blocking.(String @-> return Nil)
-    ~f:(fun ~client filepath -> highlight () |> ignore; Nvim.out_writeln [%here] client (parse_file filepath))
+      (* ~f:(fun ~client filepath -> Nvim.out_writeln [%here] client (parse_file filepath)) *)
+    ~f:(fun ~client filepath -> highlight_allocs client filepath)
+;;
+
+let clear_allocs =
+  Vcaml_plugin.Oneshot.Rpc.create
+    [%here]
+    ~name:"allocClear"
+    ~type_:Ocaml_from_nvim.Blocking.(return Nil)
+      (* ~f:(fun ~client filepath -> Nvim.out_writeln [%here] client (parse_file filepath)) *)
+    ~f:(fun ~client -> clear_highlights client)
 ;;
 
 (** This is an example of a "oneshot" plugin - the process is spawned to handle a single
@@ -104,5 +189,5 @@ let command =
   Vcaml_plugin.Oneshot.create
     ~name:"alloc-scan"
     ~description:"Find allocs in a file"
-    [ find_allocs ]
+    [ find_allocs; clear_allocs ]
 ;;
