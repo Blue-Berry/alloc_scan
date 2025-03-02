@@ -36,11 +36,13 @@ let get_buffer_name client =
 let highlight_allocs client _cmm_file =
   let%bind buf_name = get_buffer_name client in
   let file_name = Filename.basename buf_name in
-  let dir_name = Filename.dirname buf_name in
+  let dir_name = Filename.dirname buf_name ^ "/" in
   let file_name_no_ext = Filename.chop_extension file_name in
   let dune_path = Find_dune.find_dune_project buf_name in
   let dir_name = Find_dune.relative_to_dune_project dir_name in
-  let cmm_file = dune_path ^ "_build/default/" ^ dir_name ^ "/" ^ ("." ^ file_name_no_ext ^ ".objs/native/" ) ^ (file_name_no_ext ^ ".cmx.dump") in
+  let (^/) = Filename.concat in
+  let cmm_file_path = dune_path ^/ "_build/default/" ^/ dir_name ^/ ("." ^ file_name_no_ext ^ ".objs/native/" )  in
+  let cmm_file = cmm_file_path ^/ Find_dune.find_file_with_extension cmm_file_path ".cmx.dump" in
   let%bind namespace = Namespace.create [%here] client ~name:"alloc-scan" () in
   let rec loop (locs : (string * int * int * int * int) list) =
     match locs with
