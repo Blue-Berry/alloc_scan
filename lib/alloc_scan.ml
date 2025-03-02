@@ -53,7 +53,7 @@ let cmm_file buf_name : string =
   cmm_file
 ;;
 
-let highlight_allocs client _cmm_file =
+let highlight_allocs client =
   let%bind buf_name = get_buffer_name client in
   let%bind namespace = Namespace.create [%here] client ~name:"alloc-scan" () in
   let cmm_file = cmm_file buf_name in
@@ -71,13 +71,40 @@ let highlight_allocs client _cmm_file =
   loop locs
 ;;
 
+let highlight_allocs_from_file client filepath =
+  let%bind buf_name = get_buffer_name client in
+  let%bind namespace = Namespace.create [%here] client ~name:"alloc-scan" () in
+  let rec loop (locs : (string * int * int * int * int) list) =
+    match locs with
+    | [] -> return ()
+    | (filepath, line, col_start, col_end, _) :: locs ->
+      let file = String.split_on_chars filepath ~on:[ '/' ] |> List.last_exn in
+      if String.is_substring buf_name ~substring:file
+      then (
+        let%bind _ = highlight client namespace (line - 1) col_start col_end in
+        loop locs)
+      else loop locs
+  in
+  let locs = Parsing.parse_file filepath in
+  loop locs
+;;
+
 let find_allocs =
   Vcaml_plugin.Oneshot.Rpc.create
     [%here]
     ~name:"allocScan"
+    ~type_:Ocaml_from_nvim.Blocking.(return Nil)
+      (* ~f:(fun ~client filepath -> Nvim.out_writeln [%here] client (parse_file filepath)) *)
+    ~f:(fun ~client -> highlight_allocs client)
+;;
+
+let find_allocs_from_file =
+  Vcaml_plugin.Oneshot.Rpc.create
+    [%here]
+    ~name:"allocScanFile"
     ~type_:Ocaml_from_nvim.Blocking.(String @-> return Nil)
       (* ~f:(fun ~client filepath -> Nvim.out_writeln [%here] client (parse_file filepath)) *)
-    ~f:(fun ~client filepath -> highlight_allocs client filepath)
+    ~f:(fun ~client filepath -> highlight_allocs_from_file client filepath)
 ;;
 
 let clear_allocs =
@@ -95,5 +122,5 @@ let command =
   Vcaml_plugin.Oneshot.create
     ~name:"alloc-scan"
     ~description:"Find allocs in a file"
-    [ find_allocs; clear_allocs ]
+    [ find_allocs; clear_allocs; find_allocs_from_file ]
 ;;
