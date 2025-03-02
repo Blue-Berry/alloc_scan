@@ -25,7 +25,7 @@ let find_file_with_extension filepath extension =
   let files = Sys_unix.ls_dir filepath in
   let files = List.filter files ~f:(fun file -> Filename.check_suffix file extension) in
   match files with
-  | [] -> failwithf "Could not find file with extension: %s \n %s" extension filepath ()
-  | [ file ] -> file
+  | [] -> None
+  | [ file ] -> Some file
   | _ -> failwithf "Found multiple files with extension: %s \n %s" extension filepath ()
 ;;

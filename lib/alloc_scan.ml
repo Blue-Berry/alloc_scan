@@ -33,17 +33,27 @@ let get_buffer_name client =
   Vcaml.Buffer.get_name [%here] client Nvim_internal.Buffer.Or_current.Current
 ;;
 
-let highlight_allocs client _cmm_file =
-  let%bind buf_name = get_buffer_name client in
-  let file_name = Filename.basename buf_name in
-  let dir_name = Filename.dirname buf_name ^ "/" in
-  let file_name_no_ext = Filename.chop_extension file_name in
+let cmm_file buf_name : string =
+let dir_name = Filename.dirname buf_name ^ "/" in
   let dune_path = Find_dune.find_dune_project buf_name in
   let dir_name = Find_dune.relative_to_dune_project dir_name in
   let (^/) = Filename.concat in
-  let cmm_file_path = dune_path ^/ "_build/default/" ^/ dir_name ^/ ("." ^ file_name_no_ext ^ ".objs/native/" )  in
-  let cmm_file = cmm_file_path ^/ Find_dune.find_file_with_extension cmm_file_path ".cmx.dump" in
-  let%bind namespace = Namespace.create [%here] client ~name:"alloc-scan" () in
+  let cmm_file_path = dune_path ^/ "_build/default/" ^/ dir_name in
+  let objs_folder = match (Find_dune.find_file_with_extension cmm_file_path ".objs" ) with
+    | Some objs_folder -> objs_folder
+    | None -> Find_dune.find_file_with_extension cmm_file_path ".eobjs" |> Option.value_exn
+  in
+  let cmm_file_path = cmm_file_path ^/ objs_folder ^/ "native/" in
+  let cmm_file = Find_dune.find_file_with_extension cmm_file_path ".cmx.dump" |> Option.value_exn in
+  let cmm_file = cmm_file_path ^/  cmm_file in
+  cmm_file
+
+
+
+let highlight_allocs client _cmm_file =
+  let%bind buf_name = get_buffer_name client in
+    let%bind namespace = Namespace.create [%here] client ~name:"alloc-scan" () in
+    let cmm_file = cmm_file buf_name in
   let rec loop (locs : (string * int * int * int * int) list) =
     match locs with
     | [] -> return ()
