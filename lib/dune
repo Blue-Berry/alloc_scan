@@ -1,4 +1,5 @@
 (library
  (name alloc_scan)
  (libraries angstrom async core vcaml vcaml.plugin)
- (preprocess (pps ppx_jane)))
+ (preprocess
+  (pps ppx_jane)))

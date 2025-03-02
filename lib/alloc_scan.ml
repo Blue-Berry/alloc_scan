@@ -84,8 +84,12 @@ let combine_overlap_allocs (allocs : (string * int * int * int * int) list) =
   loop [] allocs
 ;;
 
+let filter_empty allocs =
+  allocs |> List.filter ~f:(fun (_, _, col_start, col_end, _) -> col_start <> col_end)
+;;
+
 let sort_and_combine_allocs allocs =
-  allocs |> sort_by_file_and_line |> combine_overlap_allocs
+  allocs |> sort_by_file_and_line |> combine_overlap_allocs |> List.rev |> filter_empty
 ;;
 
 let parse_file file =
@@ -124,7 +128,8 @@ let clear_highlights client =
 
 let highlight client namespace line col_start col_end =
   let buffer = Nvim_internal.Buffer.Or_current.Current in
-  let hl_group : string = "Search" in
+  let hl_group : string = "CurSearch" in
+  let%bind changedtick = Vcaml.Buffer.get_changedtick [%here] client buffer in
   let%bind _ =
     Nvim.out_writeln
       [%here]
@@ -135,6 +140,7 @@ let highlight client namespace line col_start col_end =
     [%here]
     client
     buffer
+    ~changedtick
     ~namespace
     ~hl_group
     ~line
@@ -149,7 +155,6 @@ let get_buffer_name client =
 let highlight_allocs client from_file =
   let%bind buf_name = get_buffer_name client in
   let%bind namespace = Namespace.create [%here] client ~name:"alloc-scan" () in
-  (* NOTE: Bufername is the relative path *)
   let rec loop (locs : (string * int * int * int * int) list) =
     match locs with
     | [] -> return ()
@@ -157,7 +162,7 @@ let highlight_allocs client from_file =
       let file = String.split_on_chars filepath ~on:[ '/' ] |> List.last_exn in
       if String.is_substring buf_name ~substring:file
       then (
-        let%bind _ = highlight client namespace line col_start col_end in
+        let%bind _ = highlight client namespace (line - 1) col_start col_end in
         loop locs)
       else loop locs
   in
