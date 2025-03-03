@@ -13,14 +13,23 @@ let clear_highlights client =
     ~line_end:(-1)
 ;;
 
-let highlight client namespace line col_start col_end bytes =
+let block_info (blocks : int) : int * int =
+  let num_blocks : int = Stdlib.( lsr ) blocks 10 in
+  let tag = Stdlib.( land ) blocks 0b1111111111 in
+  num_blocks, tag
+;;
+
+let highlight client namespace line col_start col_end blocks =
   let buffer = Nvim_internal.Buffer.Or_current.Current in
   let hl_group : string = "Search" in
   let%bind changedtick = Vcaml.Buffer.get_changedtick [%here] client buffer in
   let start_inclusive = Position.{ row = line; col = col_start } in
   let end_exclusive = Position.{ row = line; col = col_end } in
+  let num_blocks, tag = block_info blocks in
   let virtual_text =
-    [ Highlighted_text.Chunk.{ text = string_of_int bytes; hl_group = Some "Comment" } ]
+    [ Highlighted_text.Chunk.
+        { text = sprintf "Blocks: %d; Tag:%d" num_blocks tag; hl_group = Some "Comment" }
+    ]
   in
   Buffer.Untested.create_extmark
     [%here]
@@ -79,10 +88,10 @@ let highlight_allocs client =
   let rec loop (locs : (string * int * int * int * int) list) =
     match locs with
     | [] -> return ()
-    | (filepath, line, col_start, col_end, bytes) :: locs ->
+    | (filepath, line, col_start, col_end, blocks) :: locs ->
       if String.is_substring buf_name ~substring:filepath
       then (
-        let%bind _ = highlight client namespace (line - 1) col_start col_end bytes in
+        let%bind _ = highlight client namespace (line - 1) col_start col_end blocks in
         loop locs)
       else loop locs
   in
@@ -96,11 +105,11 @@ let highlight_allocs_from_file client filepath =
   let rec loop (locs : (string * int * int * int * int) list) =
     match locs with
     | [] -> return ()
-    | (filepath, line, col_start, col_end, bytes) :: locs ->
+    | (filepath, line, col_start, col_end, blocks) :: locs ->
       let file = String.split_on_chars filepath ~on:[ '/' ] |> List.last_exn in
       if String.is_substring buf_name ~substring:file
       then (
-        let%bind _ = highlight client namespace (line - 1) col_start col_end bytes in
+        let%bind _ = highlight client namespace (line - 1) col_start col_end blocks in
         loop locs)
       else loop locs
   in
