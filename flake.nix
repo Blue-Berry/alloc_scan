@@ -22,7 +22,7 @@
         inherit (pkgs) dockerTools ocamlPackages mkShell;
         inherit (dockerTools) buildImage;
         inherit (ocamlPackages) buildDunePackage;
-        name = "CahngeMe";
+        name = "alloc_scan";
         version = "0.0.1";
       in {
         devShells = {
@@ -41,6 +41,19 @@
               core
               angstrom
               vcaml
+              odoc
+            ];
+          };
+
+          other = buildDunePackage {
+            inherit version;
+            pname = name;
+            src = ./.;
+            buildInputs = with pkgs.ocamlPackages; [
+              core
+              angstrom
+              vcaml
+              odoc
             ];
           };
 
