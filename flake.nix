@@ -11,16 +11,11 @@
       systems = ["x86_64-linux" "aarch64-linux" "aarch64-darwin" "x86_64-darwin"];
 
       perSystem = {
-        config,
         self',
-        inputs',
         pkgs,
-        system,
         ...
       }: let
-
-        inherit (pkgs) dockerTools ocamlPackages mkShell;
-        inherit (dockerTools) buildImage;
+        inherit (pkgs) ocamlPackages mkShell;
         inherit (ocamlPackages) buildDunePackage;
         name = "alloc_scan";
         version = "0.0.1";
@@ -28,7 +23,7 @@
         devShells = {
           default = mkShell {
             inputsFrom = [self'.packages.default];
-            buildInputs = [pkgs.ocamlPackages.utop pkgs.ocamlPackages.ocaml-lsp pkgs.ocamlPackages.ocamlformat ];
+            buildInputs = [pkgs.ocamlPackages.utop pkgs.ocamlPackages.ocaml-lsp pkgs.ocamlPackages.ocamlformat];
           };
         };
 
@@ -43,29 +38,6 @@
               vcaml
               odoc
             ];
-          };
-
-          other = buildDunePackage {
-            inherit version;
-            pname = name;
-            src = ./.;
-            buildInputs = with pkgs.ocamlPackages; [
-              core
-              angstrom
-              vcaml
-              odoc
-            ];
-          };
-
-          docker = buildImage {
-            inherit name;
-            tag = version;
-            config = {
-              Cmd = ["${self'.packages.default}/bin/${name}"];
-              Env = [
-                "SSL_CERT_FILE=${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt"
-              ];
-            };
           };
         };
       };
