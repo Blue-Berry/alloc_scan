@@ -57,10 +57,11 @@
             inputsFrom = [self'.packages.default];
             buildInputs = with pkgs.ocamlPackages; [
             dune_3
+            ocaml
               utop
               ocaml-lsp
               ocamlformat
-            ];
+            ] ++ ocamlAllocScan.buildInputs;
           };
         };
 
